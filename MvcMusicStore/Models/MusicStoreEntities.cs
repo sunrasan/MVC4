@@ -1,14 +1,3 @@
-﻿using System.Data.Entity;
-
-namespace MvcMusicStore.Models
-{
-    public class MusicStoreEntities : DbContext
-    {
-        public DbSet<Album>     Albums { get; set; }
-        public DbSet<Genre>     Genres { get; set; }
-        public DbSet<Artist>    Artists { get; set; }
-        public DbSet<Cart>      Carts { get; set; }
-        public DbSet<Order>     Orders { get; set; }
-        public DbSet<OrderDetail> OrderDetails { get; set; }
-    }
-}
+// This file is kept for backward compatibility reference only.
+// The actual DbContext is ApplicationDbContext in the Data folder.
+// MusicStoreEntities has been replaced by ApplicationDbContext : IdentityDbContext<ApplicationUser>.

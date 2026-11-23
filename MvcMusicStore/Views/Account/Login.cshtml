@@ -1,4 +1,4 @@
-﻿@model MvcMusicStore.Models.LoginModel
+@model MvcMusicStore.Models.LoginModel
 
 @{
     ViewBag.Title = "Log in";
@@ -9,42 +9,37 @@
 </hgroup>
 
 <section id="loginForm">
-<h2>Use a local account to log in.</h2>
-@using (Html.BeginForm(new { ReturnUrl = ViewBag.ReturnUrl })) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+    <h2>Use a local account to log in.</h2>
+    <form asp-action="Login" asp-route-returnUrl="@ViewBag.ReturnUrl" method="post">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="All" class="text-danger"></div>
 
-    <fieldset>
-        <legend>Log in Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-                @Html.ValidationMessageFor(m => m.Password)
-            </li>
-            <li>
-                @Html.CheckBoxFor(m => m.RememberMe)
-                @Html.LabelFor(m => m.RememberMe, new { @class = "checkbox" })
-            </li>
-        </ol>
-        <input type="submit" value="Log in" />
-    </fieldset>
-    <p>
-        @Html.ActionLink("Register", "Register") if you don't have an account.
-    </p>
-}
-</section>
-
-<section class="social" id="socialLoginForm">
-    <h2>Use another service to log in.</h2>
-    @Html.Action("ExternalLoginsList", new { ReturnUrl = ViewBag.ReturnUrl })
+        <fieldset>
+            <legend>Log in Form</legend>
+            <ol>
+                <li>
+                    <label asp-for="UserName"></label>
+                    <input asp-for="UserName" />
+                    <span asp-validation-for="UserName" class="text-danger"></span>
+                </li>
+                <li>
+                    <label asp-for="Password"></label>
+                    <input asp-for="Password" />
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </li>
+                <li>
+                    <input asp-for="RememberMe" />
+                    <label asp-for="RememberMe" class="checkbox"></label>
+                </li>
+            </ol>
+            <input type="submit" value="Log in" />
+        </fieldset>
+        <p>
+            <a asp-action="Register">Register</a> if you don't have an account.
+        </p>
+    </form>
 </section>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <partial name="_ValidationScriptsPartial" />
 }

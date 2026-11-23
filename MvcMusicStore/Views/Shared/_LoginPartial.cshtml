@@ -1,14 +1,18 @@
-﻿@if (Request.IsAuthenticated) {
+@if (User.Identity?.IsAuthenticated == true)
+{
     <text>
-        Hello, @Html.ActionLink(User.Identity.Name, "Manage", "Account", routeValues: null, htmlAttributes: new { @class = "username", title = "Manage" })!
-        @using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm" })) {
+        Hello, <a asp-controller="Account" asp-action="Manage"
+                  class="username" title="Manage">@User.Identity.Name</a>!
+        <form asp-controller="Account" asp-action="LogOff" method="post" id="logoutForm">
             @Html.AntiForgeryToken()
             <a href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
-        }
+        </form>
     </text>
-} else {
+}
+else
+{
     <ul>
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-        <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+        <li><a asp-controller="Account" asp-action="Register" id="registerLink">Register</a></li>
+        <li><a asp-controller="Account" asp-action="Login" id="loginLink">Log in</a></li>
     </ul>
 }

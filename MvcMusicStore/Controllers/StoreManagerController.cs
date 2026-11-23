@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MvcMusicStore.Data;
 using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
@@ -12,120 +9,124 @@ namespace MvcMusicStore.Controllers
     [Authorize(Roles = "Administrator")]
     public class StoreManagerController : Controller
     {
-        private MusicStoreEntities db = new MusicStoreEntities();
+        private readonly ApplicationDbContext _db;
 
-        //
-        // GET: /StoreManager/
-
-        public ActionResult Index()
+        public StoreManagerController(ApplicationDbContext db)
         {
-            var albums = db.Albums.Include(a => a.Genre).Include(a => a.Artist)
-                .OrderBy(a => a.Price);
-            return View(albums.ToList());
+            _db = db;
         }
 
-        //
-        // GET: /StoreManager/Details/5
-
-        public ActionResult Details(int id = 0)
+        // GET: /StoreManager/
+        public async Task<IActionResult> Index()
         {
-            Album album = db.Albums.Find(id);
+            var albums = await _db.Albums
+                .Include(a => a.Genre)
+                .Include(a => a.Artist)
+                .OrderBy(a => a.Price)
+                .ToListAsync();
+            return View(albums);
+        }
+
+        // GET: /StoreManager/Details/5
+        public async Task<IActionResult> Details(int id = 0)
+        {
+            Album? album = await _db.Albums
+                .Include(a => a.Genre)
+                .Include(a => a.Artist)
+                .FirstOrDefaultAsync(a => a.AlbumId == id);
+
             if (album == null)
-            {
-                return HttpNotFound();
-            }
+                return NotFound(); // Replaces HttpNotFound() (issue-26)
+
             return View(album);
         }
 
-        //
         // GET: /StoreManager/Create
-
-        public ActionResult Create()
+        public async Task<IActionResult> Create()
         {
-            ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name");
-            ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name");
+            ViewBag.GenreId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Genres.ToListAsync(), "GenreId", "Name");
+            ViewBag.ArtistId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Artists.ToListAsync(), "ArtistId", "Name");
             return View();
         }
 
-        //
         // POST: /StoreManager/Create
-
         [HttpPost]
-        public ActionResult Create(Album album)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Album album)
         {
             if (ModelState.IsValid)
             {
-                db.Albums.Add(album);
-                db.SaveChanges();
+                _db.Albums.Add(album);
+                await _db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
-            ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
+            ViewBag.GenreId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Genres.ToListAsync(), "GenreId", "Name", album.GenreId);
+            ViewBag.ArtistId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Artists.ToListAsync(), "ArtistId", "Name", album.ArtistId);
             return View(album);
         }
 
-        //
         // GET: /StoreManager/Edit/5
-
-        public ActionResult Edit(int id = 0)
+        public async Task<IActionResult> Edit(int id = 0)
         {
-            Album album = db.Albums.Find(id);
+            Album? album = await _db.Albums.FindAsync(id);
             if (album == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
-            ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
+                return NotFound();
+
+            ViewBag.GenreId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Genres.ToListAsync(), "GenreId", "Name", album.GenreId);
+            ViewBag.ArtistId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Artists.ToListAsync(), "ArtistId", "Name", album.ArtistId);
             return View(album);
         }
 
-        //
         // POST: /StoreManager/Edit/5
-
         [HttpPost]
-        public ActionResult Edit(Album album)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Album album)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(album).State = EntityState.Modified;
-                db.SaveChanges();
+                // Use _db.Update() instead of db.Entry(album).State = EntityState.Modified (issue-23)
+                _db.Update(album);
+                await _db.SaveChangesAsync();
                 return RedirectToAction("Index");
             }
-            ViewBag.GenreId = new SelectList(db.Genres, "GenreId", "Name", album.GenreId);
-            ViewBag.ArtistId = new SelectList(db.Artists, "ArtistId", "Name", album.ArtistId);
+
+            ViewBag.GenreId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Genres.ToListAsync(), "GenreId", "Name", album.GenreId);
+            ViewBag.ArtistId = new Microsoft.AspNetCore.Mvc.Rendering.SelectList(
+                await _db.Artists.ToListAsync(), "ArtistId", "Name", album.ArtistId);
             return View(album);
         }
 
-        //
         // GET: /StoreManager/Delete/5
-
-        public ActionResult Delete(int id = 0)
+        public async Task<IActionResult> Delete(int id = 0)
         {
-            Album album = db.Albums.Find(id);
+            Album? album = await _db.Albums.FindAsync(id);
             if (album == null)
-            {
-                return HttpNotFound();
-            }
+                return NotFound();
+
             return View(album);
         }
 
-        //
         // POST: /StoreManager/Delete/5
-
         [HttpPost, ActionName("Delete")]
-        public ActionResult DeleteConfirmed(int id)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            Album album = db.Albums.Find(id);
-            db.Albums.Remove(album);
-            db.SaveChanges();
+            Album? album = await _db.Albums.FindAsync(id);
+            if (album != null)
+            {
+                _db.Albums.Remove(album);
+                await _db.SaveChangesAsync();
+            }
             return RedirectToAction("Index");
         }
-
-        protected override void Dispose(bool disposing)
-        {
-            db.Dispose();
-            base.Dispose(disposing);
-        }
+        // Dispose() override removed - DI container manages DbContext lifetime (issue-36)
     }
 }

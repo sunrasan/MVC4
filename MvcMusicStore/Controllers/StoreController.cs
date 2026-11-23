@@ -1,57 +1,48 @@
-﻿using MvcMusicStore.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MvcMusicStore.Data;
+using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
     public class StoreController : Controller
     {
-        MusicStoreEntities storeDB = new MusicStoreEntities();
-        //
-        // GET: /Store/
+        private readonly ApplicationDbContext _db;
 
-        public ActionResult Index()
+        public StoreController(ApplicationDbContext db)
         {
-            var genres = storeDB.Genres.ToList();
+            _db = db;
+        }
 
+        // GET: /Store/
+        public async Task<IActionResult> Index()
+        {
+            var genres = await _db.Genres.ToListAsync();
             return View(genres);
         }
 
-
-        //
         // GET: /Store/Browse?genre=Disco
-
-        public ActionResult Browse(string genre)
+        public async Task<IActionResult> Browse(string genre)
         {
-            // Retrieve Genre genre and its Associated associated Albums albums from database
-            var genreModel = storeDB.Genres.Include("Albums")
-                .Single(g => g.Name == genre);
+            // Replace string-based Include with lambda Include (issue-24)
+            var genreModel = await _db.Genres
+                .Include(g => g.Albums)
+                .SingleAsync(g => g.Name == genre);
 
             return View(genreModel);
         }
 
-        public ActionResult Details(int id) 
+        public async Task<IActionResult> Details(int id)
         {
-            var album = storeDB.Albums.Find(id);
+            var album = await _db.Albums
+                .Include(a => a.Genre)
+                .Include(a => a.Artist)
+                .FirstOrDefaultAsync(a => a.AlbumId == id);
+
+            if (album == null)
+                return NotFound();
 
             return View(album);
-        }
-
-        [ChildActionOnly]
-        public ActionResult GenreMenu()
-        {
-            var genres = storeDB.Genres
-                .OrderByDescending(
-                    g => g.Albums.Sum(
-                    a => a.OrderDetails.Sum(
-                    od => od.Quantity)))
-                .Take(9)
-                .ToList();
-
-            return PartialView(genres);
         }
     }
 }

@@ -1,5 +1,6 @@
-﻿using System.Linq;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MvcMusicStore.Data;
 using MvcMusicStore.Models;
 using MvcMusicStore.ViewModels;
 
@@ -7,73 +8,58 @@ namespace MvcMusicStore.Controllers
 {
     public class ShoppingCartController : Controller
     {
-        MusicStoreEntities storeDB = new MusicStoreEntities();
+        private readonly ApplicationDbContext _db;
 
-        //
-        // GET: /ShoppingCart/
-
-        public ActionResult Index()
+        public ShoppingCartController(ApplicationDbContext db)
         {
-            var cart = ShoppingCart.GetCart(storeDB, this.HttpContext);
+            _db = db;
+        }
 
-            // Set up our ViewModel
+        // GET: /ShoppingCart/
+        public async Task<IActionResult> Index()
+        {
+            var cart = ShoppingCart.GetCart(_db, HttpContext);
+
             var viewModel = new ShoppingCartViewModel
             {
                 CartItems = cart.GetCartItems(),
                 CartTotal = cart.GetTotal()
             };
 
-            // Return the view
             return View(viewModel);
         }
 
-        //
         // GET: /ShoppingCart/AddToCart/5
-
-        public ActionResult AddToCart(int id)
+        public async Task<IActionResult> AddToCart(int id)
         {
+            var addedAlbum = await _db.Albums.SingleAsync(album => album.AlbumId == id);
 
-            // Retrieve the album from the database
-            var addedAlbum = storeDB.Albums
-                .Single(album => album.AlbumId == id);
-
-            // Add it to the shopping cart
-            var cart = ShoppingCart.GetCart(storeDB, this.HttpContext);
-
+            var cart = ShoppingCart.GetCart(_db, HttpContext);
             cart.AddToCart(addedAlbum);
 
-            storeDB.SaveChanges();
+            await _db.SaveChangesAsync();
 
-            // Go back to the main store page for more shopping
             return RedirectToAction("Index");
         }
 
-        //
         // AJAX: /ShoppingCart/RemoveFromCart/5
-
         [HttpPost]
-        public ActionResult RemoveFromCart(int id)
+        public async Task<IActionResult> RemoveFromCart(int id)
         {
-            // Retrieve the current user's shopping cart
-            var cart = ShoppingCart.GetCart(storeDB, this.HttpContext);
+            var cart = ShoppingCart.GetCart(_db, HttpContext);
 
-            // Get the name of the album to display confirmation
-            string albumName = storeDB.Carts
-                .Single(item => item.RecordId == id).Album.Title;
+            string albumName = (await _db.Carts
+                .Include(c => c.Album)
+                .SingleAsync(item => item.RecordId == id)).Album.Title;
 
-            // Remove from cart
             int itemCount = cart.RemoveFromCart(id);
-
-            storeDB.SaveChanges();
+            await _db.SaveChangesAsync();
 
             string removed = (itemCount > 0) ? " 1 copy of " : string.Empty;
 
-            // Display the confirmation message
-
             var results = new ShoppingCartRemoveViewModel
             {
-                Message = removed + albumName +
-                    " has been removed from your shopping cart.",
+                Message = removed + albumName + " has been removed from your shopping cart.",
                 CartTotal = cart.GetTotal(),
                 CartCount = cart.GetCount(),
                 ItemCount = itemCount,
@@ -82,20 +68,6 @@ namespace MvcMusicStore.Controllers
 
             return Json(results);
         }
-
-        [ChildActionOnly]
-        public ActionResult CartSummary()
-        {
-            var cart = ShoppingCart.GetCart(storeDB, this.HttpContext);
-
-            var cartItems = cart.GetCartItems()
-                .Select(a => a.Album.Title)
-                .OrderBy(x => x);
-
-            ViewBag.CartCount = cartItems.Count();
-            ViewBag.CartSummary = string.Join("\n", cartItems.Distinct());
-
-            return PartialView("CartSummary");
-        }
+        // CartSummary [ChildActionOnly] removed - replaced by CartSummaryViewComponent (issue-14)
     }
 }

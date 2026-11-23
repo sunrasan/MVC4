@@ -1,4 +1,4 @@
-﻿@model MvcMusicStore.Models.RegisterExternalLoginModel
+@model MvcMusicStore.Models.RegisterExternalLoginModel
 @{
     ViewBag.Title = "Register";
 }
@@ -8,9 +8,10 @@
     <h2>Associate your @ViewBag.ProviderDisplayName account.</h2>
 </hgroup>
 
-@using (Html.BeginForm("ExternalLoginConfirmation", "Account", new { ReturnUrl = ViewBag.ReturnUrl })) {
+<form asp-action="ExternalLoginConfirmation" asp-controller="Account"
+      asp-route-returnUrl="@ViewBag.ReturnUrl" method="post">
     @Html.AntiForgeryToken()
-    @Html.ValidationSummary(true)
+    <div asp-validation-summary="All" class="text-danger"></div>
 
     <fieldset>
         <legend>Association Form</legend>
@@ -21,16 +22,16 @@
         </p>
         <ol>
             <li class="name">
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-                @Html.ValidationMessageFor(m => m.UserName)
+                <label asp-for="UserName"></label>
+                <input asp-for="UserName" />
+                <span asp-validation-for="UserName" class="text-danger"></span>
             </li>
         </ol>
-        @Html.HiddenFor(m => m.ExternalLoginData)
+        <input asp-for="ExternalLoginData" type="hidden" />
         <input type="submit" value="Register" />
     </fieldset>
-}
+</form>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <partial name="_ValidationScriptsPartial" />
 }

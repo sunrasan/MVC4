@@ -1,4 +1,4 @@
-﻿@model MvcMusicStore.Models.Album
+@model MvcMusicStore.Models.Album
 
 @{
     ViewBag.Title = "Create";
@@ -6,62 +6,63 @@
 
 <h2>Create</h2>
 
-@using (Html.BeginForm()) {
-    @Html.ValidationSummary(true)
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
     <fieldset>
         <legend>Album</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.GenreId, "Genre")
+            <label asp-for="GenreId">Genre</label>
         </div>
         <div class="editor-field">
             @Html.DropDownList("GenreId", String.Empty)
-            @Html.ValidationMessageFor(model => model.GenreId)
+            <span asp-validation-for="GenreId" class="text-danger"></span>
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.ArtistId, "Artist")
+            <label asp-for="ArtistId">Artist</label>
         </div>
         <div class="editor-field">
             @Html.DropDownList("ArtistId", String.Empty)
-            @Html.ValidationMessageFor(model => model.ArtistId)
+            <span asp-validation-for="ArtistId" class="text-danger"></span>
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Title)
+            <label asp-for="Title"></label>
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Title)
-            @Html.ValidationMessageFor(model => model.Title)
+            <input asp-for="Title" />
+            <span asp-validation-for="Title" class="text-danger"></span>
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Price)
+            <label asp-for="Price"></label>
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Price)
-            @Html.ValidationMessageFor(model => model.Price)
+            <input asp-for="Price" />
+            <span asp-validation-for="Price" class="text-danger"></span>
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.AlbumArtUrl)
+            <label asp-for="AlbumArtUrl"></label>
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.AlbumArtUrl)
-            @Html.ValidationMessageFor(model => model.AlbumArtUrl)
+            <input asp-for="AlbumArtUrl" />
+            <span asp-validation-for="AlbumArtUrl" class="text-danger"></span>
         </div>
 
         <p>
             <input type="submit" value="Create" />
         </p>
     </fieldset>
-}
+</form>
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    <a asp-action="Index">Back to List</a>
 </div>
 
 @section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
+    <partial name="_ValidationScriptsPartial" />
 }

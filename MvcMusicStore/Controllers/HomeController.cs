@@ -1,35 +1,49 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using MvcMusicStore.Data;
 using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
     public class HomeController : Controller
     {
-        private MusicStoreEntities storeDB = new MusicStoreEntities();
-        //
-        // GET: /Home/
+        private readonly ApplicationDbContext _db;
 
-        public ActionResult Index()
+        public HomeController(ApplicationDbContext db)
         {
-            // Get most popular albums
-            var albums = GetTopSellingAlbums(6);
+            _db = db;
+        }
 
+        // GET: /Home/
+        public async Task<IActionResult> Index()
+        {
+            var albums = await GetTopSellingAlbumsAsync(6);
             return View(albums);
         }
 
-
-        private List<Album> GetTopSellingAlbums(int count)
+        public IActionResult About()
         {
-            // Group the order details by album and return
-            // the albums with the highest count
+            ViewBag.Message = "Your application description page.";
+            return View();
+        }
 
-            return storeDB.Albums
+        public IActionResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+            return View();
+        }
+
+        public IActionResult Error()
+        {
+            return View();
+        }
+
+        private async Task<List<Album>> GetTopSellingAlbumsAsync(int count)
+        {
+            return await _db.Albums
                 .OrderByDescending(a => a.OrderDetails.Count())
                 .Take(count)
-                .ToList();
+                .ToListAsync();
         }
     }
 }

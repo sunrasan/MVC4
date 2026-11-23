@@ -1,19 +1,16 @@
-﻿@model MvcMusicStore.Models.Order
+@model MvcMusicStore.Models.Order
 
 @{
     ViewBag.Title = "Address And Payment";
 }
 
-@section Scripts {
-    @Scripts.Render("~/bundles/jqueryval")
-}
+<form asp-action="AddressAndPayment" method="post">
+    @Html.AntiForgeryToken()
+    <div asp-validation-summary="All" class="text-danger"></div>
 
-@using (Html.BeginForm()) {
-    
     <h2>Address And Payment</h2>
     <fieldset>
         <legend>Shipping Information</legend>
-
         @Html.EditorForModel()
     </fieldset>
     <fieldset>
@@ -21,12 +18,16 @@
         <p>We're running a promotion: all music is free with the promo code: "FREE"</p>
 
         <div class="editor-label">
-            @Html.Label("Promo Code")
+            <label for="PromoCode">Promo Code</label>
         </div>
         <div class="editor-field">
-            @Html.TextBox("PromoCode")
+            <input type="text" id="PromoCode" name="promoCode" />
         </div>
     </fieldset>
-    
+
     <input type="submit" value="Submit Order" />
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
 }

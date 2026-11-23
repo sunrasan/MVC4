@@ -1,201 +1,160 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Transactions;
-using System.Web;
-using System.Web.Mvc;
-using System.Web.Security;
-using DotNetOpenAuth.AspNet;
-using Microsoft.Web.WebPages.OAuth;
-using WebMatrix.WebData;
-using MvcMusicStore.Filters;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using MvcMusicStore.Data;
 using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Controllers
 {
+    /// <summary>
+    /// AccountController - fully migrated from WebMatrix.WebData / OAuthWebSecurity
+    /// to ASP.NET Core Identity (UserManager, SignInManager).
+    /// </summary>
     [Authorize]
-    [InitializeSimpleMembership]
     public class AccountController : Controller
     {
-        //
-        // GET: /Account/Login
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ApplicationDbContext _db;
 
+        public AccountController(
+            UserManager<ApplicationUser> userManager,
+            SignInManager<ApplicationUser> signInManager,
+            ApplicationDbContext db)
+        {
+            _userManager = userManager;
+            _signInManager = signInManager;
+            _db = db;
+        }
+
+        // GET: /Account/Login
         [AllowAnonymous]
-        public ActionResult Login(string returnUrl)
+        public IActionResult Login(string? returnUrl = null)
         {
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
 
-        //
         // POST: /Account/Login
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Login(LoginModel model, string returnUrl)
+        public async Task<IActionResult> Login(LoginModel model, string? returnUrl = null)
         {
-            if (ModelState.IsValid && WebSecurity.Login(
-                model.UserName, model.Password, persistCookie: model.RememberMe))
+            if (ModelState.IsValid)
             {
-                // Migrate the user's shopping cart
-                MigrateShoppingCart(model.UserName);
-                return RedirectToLocal(returnUrl);
+                var result = await _signInManager.PasswordSignInAsync(
+                    model.UserName, model.Password, model.RememberMe, lockoutOnFailure: false);
+
+                if (result.Succeeded)
+                {
+                    await MigrateShoppingCartAsync(model.UserName);
+                    return RedirectToLocal(returnUrl);
+                }
             }
 
-            // If we got this far, something failed, redisplay form
             ModelState.AddModelError("", "The user name or password provided is incorrect.");
             return View(model);
         }
 
-        private void MigrateShoppingCart(string UserName)
+        private async Task MigrateShoppingCartAsync(string userName)
         {
-            var storeDb = new MusicStoreEntities();
-
-            // Associate shopping cart items with logged-in user
-            var cart = ShoppingCart.GetCart(storeDb, this.HttpContext);
-            cart.MigrateCart(UserName);
-            storeDb.SaveChanges();
-
-            Session[ShoppingCart.CartSessionKey] = UserName;
+            var cart = ShoppingCart.GetCart(_db, HttpContext);
+            cart.MigrateCart(userName);
+            // Update session key to use the username
+            HttpContext.Session.SetString(ShoppingCart.CartSessionKey, userName);
+            await _db.SaveChangesAsync();
         }
 
-        //
         // POST: /Account/LogOff
-
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult LogOff()
+        public async Task<IActionResult> LogOff()
         {
-            WebSecurity.Logout();
-
+            await _signInManager.SignOutAsync();
             return RedirectToAction("Index", "Home");
         }
 
-        //
         // GET: /Account/Register
-
         [AllowAnonymous]
-        public ActionResult Register()
+        public IActionResult Register()
         {
             return View();
         }
 
-        //
         // POST: /Account/Register
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult Register(RegisterModel model)
+        public async Task<IActionResult> Register(RegisterModel model)
         {
             if (ModelState.IsValid)
             {
-                // Attempt to register the user
-                try
+                var user = new ApplicationUser { UserName = model.UserName, Email = $"{model.UserName}@musicstore.local" };
+                var result = await _userManager.CreateAsync(user, model.Password);
+
+                if (result.Succeeded)
                 {
-                    WebSecurity.CreateUserAndAccount(model.UserName, model.Password);
-                    WebSecurity.Login(model.UserName, model.Password);
-
-                    // Migrate the newly registered user's shopping cart
-                    MigrateShoppingCart(model.UserName);
-
+                    await _signInManager.SignInAsync(user, isPersistent: false);
+                    await MigrateShoppingCartAsync(model.UserName);
                     return RedirectToAction("Index", "Home");
                 }
-                catch (MembershipCreateUserException e)
+
+                foreach (var error in result.Errors)
                 {
-                    ModelState.AddModelError("", ErrorCodeToString(e.StatusCode));
+                    ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
-        //
-        // POST: /Account/Disassociate
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Disassociate(string provider, string providerUserId)
-        {
-            string ownerAccount = OAuthWebSecurity.GetUserName(provider, providerUserId);
-            ManageMessageId? message = null;
-
-            // Only disassociate the account if the currently logged in user is the owner
-            if (ownerAccount == User.Identity.Name)
-            {
-                // Use a transaction to prevent the user from deleting their last login credential
-                using (var scope = new TransactionScope(TransactionScopeOption.Required, new TransactionOptions { IsolationLevel = IsolationLevel.Serializable }))
-                {
-                    bool hasLocalAccount = OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
-                    if (hasLocalAccount || OAuthWebSecurity.GetAccountsFromUserName(User.Identity.Name).Count > 1)
-                    {
-                        OAuthWebSecurity.DeleteAccount(provider, providerUserId);
-                        scope.Complete();
-                        message = ManageMessageId.RemoveLoginSuccess;
-                    }
-                }
-            }
-
-            return RedirectToAction("Manage", new { Message = message });
-        }
-
-        //
         // GET: /Account/Manage
-
-        public ActionResult Manage(ManageMessageId? message)
+        public async Task<IActionResult> Manage(ManageMessageId? message = null)
         {
             ViewBag.StatusMessage =
                 message == ManageMessageId.ChangePasswordSuccess ? "Your password has been changed."
                 : message == ManageMessageId.SetPasswordSuccess ? "Your password has been set."
                 : message == ManageMessageId.RemoveLoginSuccess ? "The external login was removed."
                 : "";
-            ViewBag.HasLocalPassword = OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
+
+            var user = await _userManager.GetUserAsync(User);
+            ViewBag.HasLocalPassword = user != null && await _userManager.HasPasswordAsync(user);
             ViewBag.ReturnUrl = Url.Action("Manage");
             return View();
         }
 
-        //
-        // POST: /Account/Manage
-
+        // POST: /Account/Manage (change password)
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Manage(LocalPasswordModel model)
+        public async Task<IActionResult> Manage(LocalPasswordModel model)
         {
-            bool hasLocalAccount = OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
-            ViewBag.HasLocalPassword = hasLocalAccount;
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
+
+            bool hasLocalPassword = await _userManager.HasPasswordAsync(user);
+            ViewBag.HasLocalPassword = hasLocalPassword;
             ViewBag.ReturnUrl = Url.Action("Manage");
-            if (hasLocalAccount)
+
+            if (hasLocalPassword)
             {
                 if (ModelState.IsValid)
                 {
-                    // ChangePassword will throw an exception rather than return false in certain failure scenarios.
-                    bool changePasswordSucceeded;
-                    try
+                    var result = await _userManager.ChangePasswordAsync(user, model.OldPassword, model.NewPassword);
+                    if (result.Succeeded)
                     {
-                        changePasswordSucceeded = WebSecurity.ChangePassword(User.Identity.Name, model.OldPassword, model.NewPassword);
-                    }
-                    catch (Exception)
-                    {
-                        changePasswordSucceeded = false;
-                    }
-
-                    if (changePasswordSucceeded)
-                    {
+                        await _signInManager.RefreshSignInAsync(user);
                         return RedirectToAction("Manage", new { Message = ManageMessageId.ChangePasswordSuccess });
                     }
-                    else
+                    foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError("", "The current password is incorrect or the new password is invalid.");
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
             }
             else
             {
-                // User does not have a local password so remove any validation errors caused by a missing
-                // OldPassword field
-                ModelState state = ModelState["OldPassword"];
+                var state = ModelState["OldPassword"];
                 if (state != null)
                 {
                     state.Errors.Clear();
@@ -203,161 +162,150 @@ namespace MvcMusicStore.Controllers
 
                 if (ModelState.IsValid)
                 {
-                    try
+                    var result = await _userManager.AddPasswordAsync(user, model.NewPassword);
+                    if (result.Succeeded)
                     {
-                        WebSecurity.CreateAccount(User.Identity.Name, model.NewPassword);
                         return RedirectToAction("Manage", new { Message = ManageMessageId.SetPasswordSuccess });
                     }
-                    catch (Exception e)
+                    foreach (var error in result.Errors)
                     {
-                        ModelState.AddModelError("", e);
+                        ModelState.AddModelError(string.Empty, error.Description);
                     }
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 
-        //
         // POST: /Account/ExternalLogin
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult ExternalLogin(string provider, string returnUrl)
+        public IActionResult ExternalLogin(string provider, string? returnUrl = null)
         {
-            return new ExternalLoginResult(provider, Url.Action("ExternalLoginCallback", new { ReturnUrl = returnUrl }));
+            var redirectUrl = Url.Action(nameof(ExternalLoginCallback), new { returnUrl });
+            var properties = _signInManager.ConfigureExternalAuthenticationProperties(provider, redirectUrl);
+            return Challenge(properties, provider);
         }
 
-        //
         // GET: /Account/ExternalLoginCallback
-
         [AllowAnonymous]
-        public ActionResult ExternalLoginCallback(string returnUrl)
+        public async Task<IActionResult> ExternalLoginCallback(string? returnUrl = null)
         {
-            AuthenticationResult result = OAuthWebSecurity.VerifyAuthentication(Url.Action("ExternalLoginCallback", new { ReturnUrl = returnUrl }));
-            if (!result.IsSuccessful)
+            var info = await _signInManager.GetExternalLoginInfoAsync();
+            if (info == null)
             {
-                return RedirectToAction("ExternalLoginFailure");
+                return RedirectToAction(nameof(ExternalLoginFailure));
             }
 
-            if (OAuthWebSecurity.Login(result.Provider, result.ProviderUserId, createPersistentCookie: false))
+            var result = await _signInManager.ExternalLoginSignInAsync(
+                info.LoginProvider, info.ProviderKey, isPersistent: false);
+
+            if (result.Succeeded)
             {
                 return RedirectToLocal(returnUrl);
             }
 
-            if (User.Identity.IsAuthenticated)
+            if (User.Identity?.IsAuthenticated == true)
             {
-                // If the current user is logged in add the new account
-                OAuthWebSecurity.CreateOrUpdateAccount(result.Provider, result.ProviderUserId, User.Identity.Name);
+                var user = await _userManager.GetUserAsync(User);
+                if (user != null)
+                {
+                    await _userManager.AddLoginAsync(user, info);
+                }
                 return RedirectToLocal(returnUrl);
             }
             else
             {
-                // User is new, ask for their desired membership name
-                string loginData = OAuthWebSecurity.SerializeProviderUserId(result.Provider, result.ProviderUserId);
-                ViewBag.ProviderDisplayName = OAuthWebSecurity.GetOAuthClientData(result.Provider).DisplayName;
+                ViewBag.ProviderDisplayName = info.ProviderDisplayName;
                 ViewBag.ReturnUrl = returnUrl;
-                return View("ExternalLoginConfirmation", new RegisterExternalLoginModel { UserName = result.UserName, ExternalLoginData = loginData });
+                var email = info.Principal.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value ?? string.Empty;
+                return View("ExternalLoginConfirmation", new RegisterExternalLoginModel { UserName = email });
             }
         }
 
-        //
         // POST: /Account/ExternalLoginConfirmation
-
         [HttpPost]
         [AllowAnonymous]
         [ValidateAntiForgeryToken]
-        public ActionResult ExternalLoginConfirmation(RegisterExternalLoginModel model, string returnUrl)
+        public async Task<IActionResult> ExternalLoginConfirmation(RegisterExternalLoginModel model, string? returnUrl = null)
         {
-            string provider = null;
-            string providerUserId = null;
-
-            if (User.Identity.IsAuthenticated || !OAuthWebSecurity.TryDeserializeProviderUserId(model.ExternalLoginData, out provider, out providerUserId))
+            if (User.Identity?.IsAuthenticated == true)
             {
                 return RedirectToAction("Manage");
             }
 
             if (ModelState.IsValid)
             {
-                // Insert a new user into the database
-                using (UsersContext db = new UsersContext())
+                var info = await _signInManager.GetExternalLoginInfoAsync();
+                if (info == null)
                 {
-                    UserProfile user = db.UserProfiles.FirstOrDefault(u => u.UserName.ToLower() == model.UserName.ToLower());
-                    // Check if user already exists
-                    if (user == null)
+                    return View("ExternalLoginFailure");
+                }
+
+                var user = new ApplicationUser { UserName = model.UserName, Email = $"{model.UserName}@musicstore.local" };
+                var result = await _userManager.CreateAsync(user);
+                if (result.Succeeded)
+                {
+                    result = await _userManager.AddLoginAsync(user, info);
+                    if (result.Succeeded)
                     {
-                        // Insert name into the profile table
-                        db.UserProfiles.Add(new UserProfile { UserName = model.UserName });
-                        db.SaveChanges();
-
-                        OAuthWebSecurity.CreateOrUpdateAccount(provider, providerUserId, model.UserName);
-                        OAuthWebSecurity.Login(provider, providerUserId, createPersistentCookie: false);
-
+                        await _signInManager.SignInAsync(user, isPersistent: false);
                         return RedirectToLocal(returnUrl);
                     }
-                    else
-                    {
-                        ModelState.AddModelError("UserName", "User name already exists. Please enter a different user name.");
-                    }
+                }
+
+                foreach (var error in result.Errors)
+                {
+                    ModelState.AddModelError(string.Empty, error.Description);
                 }
             }
 
-            ViewBag.ProviderDisplayName = OAuthWebSecurity.GetOAuthClientData(provider).DisplayName;
             ViewBag.ReturnUrl = returnUrl;
             return View(model);
         }
 
-        //
         // GET: /Account/ExternalLoginFailure
-
         [AllowAnonymous]
-        public ActionResult ExternalLoginFailure()
+        public IActionResult ExternalLoginFailure()
         {
             return View();
         }
 
-        [AllowAnonymous]
-        [ChildActionOnly]
-        public ActionResult ExternalLoginsList(string returnUrl)
+        // POST: /Account/Disassociate
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Disassociate(string provider, string providerUserId)
         {
-            ViewBag.ReturnUrl = returnUrl;
-            return PartialView("_ExternalLoginsListPartial", OAuthWebSecurity.RegisteredClientData);
-        }
+            ManageMessageId? message = null;
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Challenge();
 
-        [ChildActionOnly]
-        public ActionResult RemoveExternalLogins()
-        {
-            ICollection<OAuthAccount> accounts = OAuthWebSecurity.GetAccountsFromUserName(User.Identity.Name);
-            List<ExternalLogin> externalLogins = new List<ExternalLogin>();
-            foreach (OAuthAccount account in accounts)
+            var logins = await _userManager.GetLoginsAsync(user);
+            bool hasPassword = await _userManager.HasPasswordAsync(user);
+
+            if (hasPassword || logins.Count > 1)
             {
-                AuthenticationClientData clientData = OAuthWebSecurity.GetOAuthClientData(account.Provider);
-
-                externalLogins.Add(new ExternalLogin
+                var result = await _userManager.RemoveLoginAsync(user, provider, providerUserId);
+                if (result.Succeeded)
                 {
-                    Provider = account.Provider,
-                    ProviderDisplayName = clientData.DisplayName,
-                    ProviderUserId = account.ProviderUserId,
-                });
+                    await _signInManager.RefreshSignInAsync(user);
+                    message = ManageMessageId.RemoveLoginSuccess;
+                }
             }
 
-            ViewBag.ShowRemoveButton = externalLogins.Count > 1 || OAuthWebSecurity.HasLocalAccount(WebSecurity.GetUserId(User.Identity.Name));
-            return PartialView("_RemoveExternalLoginsPartial", externalLogins);
+            return RedirectToAction("Manage", new { Message = message });
         }
 
         #region Helpers
-        private ActionResult RedirectToLocal(string returnUrl)
+
+        private IActionResult RedirectToLocal(string? returnUrl)
         {
-            if (Url.IsLocalUrl(returnUrl))
+            if (!string.IsNullOrEmpty(returnUrl) && Url.IsLocalUrl(returnUrl))
             {
                 return Redirect(returnUrl);
             }
-            else
-            {
-                return RedirectToAction("Index", "Home");
-            }
+            return RedirectToAction("Index", "Home");
         }
 
         public enum ManageMessageId
@@ -367,60 +315,6 @@ namespace MvcMusicStore.Controllers
             RemoveLoginSuccess,
         }
 
-        internal class ExternalLoginResult : ActionResult
-        {
-            public ExternalLoginResult(string provider, string returnUrl)
-            {
-                Provider = provider;
-                ReturnUrl = returnUrl;
-            }
-
-            public string Provider { get; private set; }
-            public string ReturnUrl { get; private set; }
-
-            public override void ExecuteResult(ControllerContext context)
-            {
-                OAuthWebSecurity.RequestAuthentication(Provider, ReturnUrl);
-            }
-        }
-
-        private static string ErrorCodeToString(MembershipCreateStatus createStatus)
-        {
-            // See http://go.microsoft.com/fwlink/?LinkID=177550 for
-            // a full list of status codes.
-            switch (createStatus)
-            {
-                case MembershipCreateStatus.DuplicateUserName:
-                    return "User name already exists. Please enter a different user name.";
-
-                case MembershipCreateStatus.DuplicateEmail:
-                    return "A user name for that e-mail address already exists. Please enter a different e-mail address.";
-
-                case MembershipCreateStatus.InvalidPassword:
-                    return "The password provided is invalid. Please enter a valid password value.";
-
-                case MembershipCreateStatus.InvalidEmail:
-                    return "The e-mail address provided is invalid. Please check the value and try again.";
-
-                case MembershipCreateStatus.InvalidAnswer:
-                    return "The password retrieval answer provided is invalid. Please check the value and try again.";
-
-                case MembershipCreateStatus.InvalidQuestion:
-                    return "The password retrieval question provided is invalid. Please check the value and try again.";
-
-                case MembershipCreateStatus.InvalidUserName:
-                    return "The user name provided is invalid. Please check the value and try again.";
-
-                case MembershipCreateStatus.ProviderError:
-                    return "The authentication provider returned an error. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
-
-                case MembershipCreateStatus.UserRejected:
-                    return "The user creation request has been canceled. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
-
-                default:
-                    return "An unknown error occurred. Please verify your entry and try again. If the problem persists, please contact your system administrator.";
-            }
-        }
         #endregion
     }
 }
