@@ -1,0 +1,2427 @@
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Program.cs
+FN:5,System.Void Program/<<Main>$>d__0::MoveNext()
+FNDA:0,System.Void Program/<<Main>$>d__0::MoveNext()
+DA:6,0
+DA:9,0
+DA:10,0
+DA:12,0
+DA:13,0
+DA:15,0
+DA:17,0
+DA:18,0
+DA:19,0
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:29,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:37,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:48,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+DA:59,0
+DA:61,0
+DA:62,0
+DA:64,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:95,0
+BRDA:9,74,0,0
+BRDA:9,74,1,0
+BRDA:51,369,0,0
+BRDA:51,369,1,0
+LF:68
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/ExternalLoginConfirmation.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginConfirmation/<<ExecuteAsync>b__19_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginConfirmation/<<ExecuteAsync>b__19_0>d::MoveNext()
+DA:13,0
+DA:19,0
+BRDA:13,514,0,0
+BRDA:13,514,1,0
+BRDA:19,704,1,0
+BRDA:19,704,0,0
+BRDA:19,796,1,0
+BRDA:19,796,0,0
+BRDA:19,1311,0,0
+BRDA:19,1311,1,0
+BRDA:19,1906,0,0
+BRDA:19,1906,1,0
+BRDA:19,2523,0,0
+BRDA:19,2523,1,0
+BRDA:19,3172,0,0
+BRDA:19,3172,1,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginConfirmation/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginConfirmation/<ExecuteAsync>d__19::MoveNext()
+DA:3,0
+DA:7,0
+DA:8,0
+DA:12,0
+BRDA:3,34,1,0
+BRDA:3,34,0,0
+BRDA:7,154,1,0
+BRDA:7,154,0,0
+BRDA:7,246,1,0
+BRDA:7,246,0,0
+BRDA:8,356,1,0
+BRDA:8,356,0,0
+BRDA:8,448,1,0
+BRDA:8,448,0,0
+BRDA:8,837,0,0
+BRDA:8,837,1,0
+BRDA:12,889,1,0
+BRDA:12,889,0,0
+BRDA:12,981,1,0
+BRDA:12,981,0,0
+BRDA:12,1377,0,0
+BRDA:12,1377,1,0
+LF:6
+LH:0
+BRF:32
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/ExternalLoginFailure.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginFailure/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_ExternalLoginFailure/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+DA:6,0
+BRDA:2,13,1,0
+BRDA:2,13,0,0
+BRDA:6,133,1,0
+BRDA:6,133,0,0
+BRDA:6,225,1,0
+BRDA:6,225,0,0
+LF:2
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/Login.cshtml
+FN:13,System.Void AspNetCoreGeneratedDocument.Views_Account_Login/<<ExecuteAsync>b__20_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_Login/<<ExecuteAsync>b__20_0>d::MoveNext()
+DA:14,0
+BRDA:14,604,0,0
+BRDA:14,604,1,0
+BRDA:14,1199,0,0
+BRDA:14,1199,1,0
+BRDA:14,1794,0,0
+BRDA:14,1794,1,0
+BRDA:14,2411,0,0
+BRDA:14,2411,1,0
+BRDA:14,3006,0,0
+BRDA:14,3006,1,0
+BRDA:14,3603,0,0
+BRDA:14,3603,1,0
+BRDA:14,4222,0,0
+BRDA:14,4222,1,0
+BRDA:14,4819,0,0
+BRDA:14,4819,1,0
+BRDA:14,5438,0,0
+BRDA:14,5438,1,0
+BRDA:14,5932,0,0
+BRDA:14,5932,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_Account_Login/<ExecuteAsync>d__20::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_Login/<ExecuteAsync>d__20::MoveNext()
+DA:4,0
+DA:8,0
+DA:13,0
+BRDA:4,51,1,0
+BRDA:4,51,0,0
+BRDA:8,171,1,0
+BRDA:8,171,0,0
+BRDA:8,263,1,0
+BRDA:8,263,0,0
+BRDA:8,598,0,0
+BRDA:8,598,1,0
+BRDA:13,650,1,0
+BRDA:13,650,0,0
+BRDA:13,742,1,0
+BRDA:13,742,0,0
+BRDA:13,1138,0,0
+BRDA:13,1138,1,0
+LF:4
+LH:0
+BRF:34
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/Manage.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Account_Manage/<ExecuteAsync>d__10::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_Manage/<ExecuteAsync>d__10::MoveNext()
+DA:3,0
+DA:7,0
+DA:10,0
+DA:12,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:19,0
+DA:21,0
+BRDA:3,57,1,0
+BRDA:3,57,0,0
+BRDA:7,177,1,0
+BRDA:7,177,0,0
+BRDA:7,269,1,0
+BRDA:7,269,0,0
+BRDA:10,379,1,0
+BRDA:10,379,0,0
+BRDA:10,471,1,0
+BRDA:10,471,0,0
+BRDA:12,599,0,0
+BRDA:12,599,1,0
+BRDA:14,638,1,0
+BRDA:14,638,0,0
+BRDA:14,706,1,0
+BRDA:14,706,0,0
+BRDA:14,784,1,0
+BRDA:14,784,0,0
+BRDA:14,879,0,0
+BRDA:15,1220,0,0
+BRDA:15,1220,1,0
+BRDA:14,879,1,0
+BRDA:19,1750,0,0
+BRDA:19,1750,1,0
+LF:9
+LH:0
+BRF:24
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/Register.cshtml
+FN:11,System.Void AspNetCoreGeneratedDocument.Views_Account_Register/<<ExecuteAsync>b__17_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_Register/<<ExecuteAsync>b__17_0>d::MoveNext()
+DA:12,0
+BRDA:12,604,0,0
+BRDA:12,604,1,0
+BRDA:12,1199,0,0
+BRDA:12,1199,1,0
+BRDA:12,1794,0,0
+BRDA:12,1794,1,0
+BRDA:12,2411,0,0
+BRDA:12,2411,1,0
+BRDA:12,3006,0,0
+BRDA:12,3006,1,0
+BRDA:12,3603,0,0
+BRDA:12,3603,1,0
+BRDA:12,4222,0,0
+BRDA:12,4222,1,0
+BRDA:12,4819,0,0
+BRDA:12,4819,1,0
+BRDA:12,5416,0,0
+BRDA:12,5416,1,0
+BRDA:12,6035,0,0
+BRDA:12,6035,1,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Account_Register/<ExecuteAsync>d__17::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account_Register/<ExecuteAsync>d__17::MoveNext()
+DA:3,0
+DA:7,0
+BRDA:3,34,1,0
+BRDA:3,34,0,0
+BRDA:7,154,1,0
+BRDA:7,154,0,0
+BRDA:7,246,1,0
+BRDA:7,246,0,0
+BRDA:7,757,0,0
+BRDA:7,757,1,0
+LF:3
+LH:0
+BRF:28
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/_ChangePasswordPartial.cshtml
+FN:5,System.Void AspNetCoreGeneratedDocument.Views_Account__ChangePasswordPartial/<<ExecuteAsync>b__16_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__ChangePasswordPartial/<<ExecuteAsync>b__16_0>d::MoveNext()
+DA:6,0
+BRDA:6,604,0,0
+BRDA:6,604,1,0
+BRDA:6,1199,0,0
+BRDA:6,1199,1,0
+BRDA:6,1794,0,0
+BRDA:6,1794,1,0
+BRDA:6,2411,0,0
+BRDA:6,2411,1,0
+BRDA:6,3006,0,0
+BRDA:6,3006,1,0
+BRDA:6,3603,0,0
+BRDA:6,3603,1,0
+BRDA:6,4222,0,0
+BRDA:6,4222,1,0
+BRDA:6,4819,0,0
+BRDA:6,4819,1,0
+BRDA:6,5416,0,0
+BRDA:6,5416,1,0
+BRDA:6,6035,0,0
+BRDA:6,6035,1,0
+LF:1
+LH:0
+BRF:20
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/_ExternalLoginsListPartial.cshtml
+FN:12,System.Void AspNetCoreGeneratedDocument.Views_Account__ExternalLoginsListPartial/<<ExecuteAsync>b__11_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__ExternalLoginsListPartial/<<ExecuteAsync>b__11_0>d::MoveNext()
+DA:13,0
+DA:17,0
+DA:18,0
+DA:21,0
+DA:23,0
+BRDA:17,561,1,0
+BRDA:17,561,0,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Account__ExternalLoginsListPartial/<ExecuteAsync>d__11::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__ExternalLoginsListPartial/<ExecuteAsync>d__11::MoveNext()
+DA:3,0
+DA:4,0
+DA:8,0
+DA:10,0
+DA:12,0
+DA:27,0
+BRDA:3,67,0,0
+BRDA:3,67,1,0
+BRDA:10,395,0,0
+BRDA:10,395,1,0
+BRDA:12,447,1,0
+BRDA:12,447,0,0
+BRDA:12,539,1,0
+BRDA:12,539,0,0
+BRDA:12,936,0,0
+BRDA:12,936,1,0
+LF:11
+LH:0
+BRF:12
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/_RemoveExternalLoginsPartial.cshtml
+FN:15,System.Void AspNetCoreGeneratedDocument.Views_Account__RemoveExternalLoginsPartial/<>c__DisplayClass11_0/<<ExecuteAsync>b__0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__RemoveExternalLoginsPartial/<>c__DisplayClass11_0/<<ExecuteAsync>b__0>d::MoveNext()
+DA:16,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Account__RemoveExternalLoginsPartial/<ExecuteAsync>d__11::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__RemoveExternalLoginsPartial/<ExecuteAsync>d__11::MoveNext()
+DA:3,0
+DA:4,0
+DA:8,0
+DA:9,0
+DA:11,0
+DA:13,0
+DA:14,0
+DA:24,0
+DA:26,0
+DA:28,0
+DA:31,0
+DA:34,0
+BRDA:3,54,0,0
+BRDA:8,1233,1,0
+BRDA:13,245,1,0
+BRDA:13,245,0,0
+BRDA:13,313,1,0
+BRDA:13,313,0,0
+BRDA:13,391,1,0
+BRDA:13,391,0,0
+BRDA:13,486,0,0
+BRDA:14,972,0,0
+BRDA:14,972,1,0
+BRDA:13,486,1,0
+BRDA:8,1233,0,0
+BRDA:3,54,1,0
+LF:13
+LH:0
+BRF:14
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Account/_SetPasswordPartial.cshtml
+FN:8,System.Void AspNetCoreGeneratedDocument.Views_Account__SetPasswordPartial/<<ExecuteAsync>b__16_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Account__SetPasswordPartial/<<ExecuteAsync>b__16_0>d::MoveNext()
+DA:9,0
+BRDA:9,550,0,0
+BRDA:9,550,1,0
+BRDA:9,1145,0,0
+BRDA:9,1145,1,0
+BRDA:9,1740,0,0
+BRDA:9,1740,1,0
+BRDA:9,2357,0,0
+BRDA:9,2357,1,0
+BRDA:9,2952,0,0
+BRDA:9,2952,1,0
+BRDA:9,3549,0,0
+BRDA:9,3549,1,0
+BRDA:9,4168,0,0
+BRDA:9,4168,1,0
+LF:1
+LH:0
+BRF:14
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Checkout/AddressAndPayment.cshtml
+FN:7,System.Void AspNetCoreGeneratedDocument.Views_Checkout_AddressAndPayment/<<ExecuteAsync>b__14_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Checkout_AddressAndPayment/<<ExecuteAsync>b__14_0>d::MoveNext()
+DA:8,0
+DA:14,0
+BRDA:8,437,0,0
+BRDA:8,437,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_Checkout_AddressAndPayment/<ExecuteAsync>d__14::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Checkout_AddressAndPayment/<ExecuteAsync>d__14::MoveNext()
+DA:4,0
+BRDA:4,51,1,0
+BRDA:4,51,0,0
+BRDA:4,572,0,0
+BRDA:4,572,1,0
+LF:3
+LH:0
+BRF:6
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Checkout/Complete.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_Checkout_Complete/<ExecuteAsync>d__9::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Checkout_Complete/<ExecuteAsync>d__9::MoveNext()
+DA:4,0
+DA:9,0
+BRDA:4,51,1,0
+BRDA:4,51,0,0
+BRDA:9,567,0,0
+BRDA:9,567,1,0
+LF:2
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Home/About.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Home_About/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_About/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+DA:6,0
+DA:7,0
+DA:30,0
+DA:31,0
+DA:32,0
+BRDA:2,13,1,0
+BRDA:2,13,0,0
+BRDA:6,133,1,0
+BRDA:6,133,0,0
+BRDA:6,225,1,0
+BRDA:6,225,0,0
+BRDA:7,335,1,0
+BRDA:7,335,0,0
+BRDA:7,427,1,0
+BRDA:7,427,0,0
+LF:6
+LH:0
+BRF:10
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Home/Contact.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Home_Contact/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Contact/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+DA:6,0
+DA:7,0
+BRDA:2,13,1,0
+BRDA:2,13,0,0
+BRDA:6,133,1,0
+BRDA:6,133,0,0
+BRDA:6,225,1,0
+BRDA:6,225,0,0
+BRDA:7,335,1,0
+BRDA:7,335,0,0
+BRDA:7,427,1,0
+BRDA:7,427,0,0
+LF:3
+LH:0
+BRF:10
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Home/Error.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Home_Error/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Error/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+BRDA:2,13,1,0
+BRDA:2,13,0,0
+LF:1
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Home/Index.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Home_Index/<ExecuteAsync>d__8::MoveNext()
+DA:3,0
+DA:12,0
+DA:13,0
+DA:18,0
+DA:20,0
+BRDA:3,34,1,0
+BRDA:3,34,0,0
+BRDA:3,433,0,0
+BRDA:3,433,1,0
+BRDA:12,1094,1,0
+BRDA:12,1094,0,0
+LF:5
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Shared/Components/CartSummary/Default.cshtml
+FN:5,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_CartSummary_Default/<<ExecuteAsync>b__10_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_CartSummary_Default/<<ExecuteAsync>b__10_0>d::MoveNext()
+DA:6,0
+BRDA:6,30,1,0
+BRDA:6,30,0,0
+BRDA:6,122,1,0
+BRDA:6,122,0,0
+FN:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_CartSummary_Default/<ExecuteAsync>d__10::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_CartSummary_Default/<ExecuteAsync>d__10::MoveNext()
+DA:1,0
+DA:2,0
+DA:9,0
+BRDA:1,34,1,0
+BRDA:1,34,0,0
+BRDA:1,102,1,0
+BRDA:1,102,0,0
+BRDA:1,180,1,0
+BRDA:1,180,0,0
+BRDA:1,275,0,0
+BRDA:2,568,1,0
+BRDA:2,568,0,0
+BRDA:2,720,1,0
+BRDA:2,720,0,0
+BRDA:2,984,0,0
+BRDA:2,984,1,0
+BRDA:1,275,1,0
+LF:4
+LH:0
+BRF:18
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Shared/Components/GenreMenu/Default.cshtml
+FN:8,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_GenreMenu_Default/<>c__DisplayClass10_0/<<ExecuteAsync>b__1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_GenreMenu_Default/<>c__DisplayClass10_0/<<ExecuteAsync>b__1>d::MoveNext()
+DA:9,0
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_GenreMenu_Default/<ExecuteAsync>d__10::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Components_GenreMenu_Default/<ExecuteAsync>d__10::MoveNext()
+DA:5,0
+DA:6,0
+DA:11,0
+BRDA:5,946,1,0
+BRDA:6,413,0,0
+BRDA:6,413,1,0
+BRDA:9,742,0,0
+BRDA:9,742,1,0
+BRDA:5,946,0,0
+BRDA:5,1363,0,0
+BRDA:5,1363,1,0
+LF:4
+LH:0
+BRF:8
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Shared/Error.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared_Error/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+BRDA:2,13,1,0
+BRDA:2,13,0,0
+LF:1
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Shared/_Layout.cshtml
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__24_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__24_0>d::MoveNext()
+DA:5,0
+BRDA:5,74,1,0
+BRDA:5,74,0,0
+BRDA:5,166,1,0
+BRDA:5,166,0,0
+BRDA:5,599,0,0
+BRDA:5,599,1,0
+BRDA:5,1261,0,0
+BRDA:5,1261,1,0
+FN:27,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__24_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__Layout/<<ExecuteAsync>b__24_1>d::MoveNext()
+DA:28,0
+DA:36,0
+DA:37,0
+DA:39,0
+DA:55,0
+BRDA:28,515,0,0
+BRDA:28,515,1,0
+BRDA:28,1021,0,0
+BRDA:28,1021,1,0
+BRDA:28,1567,0,0
+BRDA:28,1567,1,0
+BRDA:28,2113,0,0
+BRDA:28,2113,1,0
+BRDA:39,3103,0,0
+BRDA:39,3103,1,0
+BRDA:39,3745,0,0
+BRDA:39,3745,1,0
+LF:6
+LH:0
+BRF:20
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Shared/_LoginPartial.cshtml
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__20_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__20_0>d::MoveNext()
+DA:5,0
+FN:6,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__20_1>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<<ExecuteAsync>b__20_1>d::MoveNext()
+DA:7,0
+FN:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<ExecuteAsync>d__20::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Shared__LoginPartial/<ExecuteAsync>d__20::MoveNext()
+DA:1,0
+DA:2,0
+DA:11,0
+DA:13,0
+DA:18,0
+BRDA:1,105,0,0
+BRDA:1,105,1,0
+BRDA:1,118,0,0
+BRDA:2,543,0,0
+BRDA:2,543,1,0
+BRDA:2,1215,0,0
+BRDA:2,1215,1,0
+BRDA:1,118,1,0
+BRDA:13,1807,0,0
+BRDA:13,1807,1,0
+BRDA:13,2375,0,0
+BRDA:13,2375,1,0
+LF:7
+LH:0
+BRF:12
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/ShoppingCart/CartSummary.cshtml
+FN:0,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_CartSummary/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_CartSummary/<ExecuteAsync>d__0::MoveNext()
+DA:1,0
+DA:3,0
+DA:4,0
+DA:5,0
+DA:6,0
+DA:8,0
+BRDA:1,13,1,0
+BRDA:1,13,0,0
+BRDA:1,81,1,0
+BRDA:1,81,0,0
+BRDA:1,159,1,0
+BRDA:1,159,0,0
+BRDA:1,254,0,0
+BRDA:3,304,1,0
+BRDA:3,304,0,0
+BRDA:3,421,1,0
+BRDA:3,421,0,0
+BRDA:1,254,1,0
+LF:6
+LH:0
+BRF:12
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/ShoppingCart/Index.cshtml
+FN:49,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_Index/<>c__DisplayClass13_0/<<ExecuteAsync>b__3>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_Index/<>c__DisplayClass13_0/<<ExecuteAsync>b__3>d::MoveNext()
+DA:50,0
+BRDA:50,36,0,0
+BRDA:50,36,1,0
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_Index/<ExecuteAsync>d__13::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_ShoppingCart_Index/<ExecuteAsync>d__13::MoveNext()
+DA:3,0
+DA:45,0
+DA:46,0
+DA:53,0
+DA:56,0
+DA:59,0
+DA:60,0
+DA:65,0
+DA:71,0
+BRDA:3,52,1,0
+BRDA:3,52,0,0
+BRDA:3,574,0,0
+BRDA:3,574,1,0
+BRDA:45,2196,1,0
+BRDA:46,1271,0,0
+BRDA:46,1271,1,0
+BRDA:50,1608,0,0
+BRDA:50,1608,1,0
+BRDA:53,1816,0,0
+BRDA:53,1816,1,0
+BRDA:45,2196,0,0
+LF:10
+LH:0
+BRF:14
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Store/Browse.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Store_Browse/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Store_Browse/<ExecuteAsync>d__0::MoveNext()
+DA:3,0
+DA:7,0
+DA:10,0
+DA:11,0
+DA:14,0
+DA:15,0
+DA:17,0
+DA:18,0
+DA:21,0
+BRDA:3,13,1,0
+BRDA:3,13,0,0
+BRDA:10,711,1,0
+BRDA:14,396,0,0
+BRDA:14,396,1,0
+BRDA:10,711,0,0
+LF:9
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Store/Details.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_Store_Details/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Store_Details/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:7,0
+DA:16,0
+DA:20,0
+DA:24,0
+DA:27,0
+DA:28,0
+BRDA:4,30,1,0
+BRDA:4,30,0,0
+BRDA:16,456,0,0
+BRDA:16,456,1,0
+BRDA:20,513,0,0
+BRDA:20,513,1,0
+LF:7
+LH:0
+BRF:6
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Store/GenreMenu.cshtml
+FN:4,System.Void AspNetCoreGeneratedDocument.Views_Store_GenreMenu/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Store_GenreMenu/<ExecuteAsync>d__0::MoveNext()
+DA:5,0
+DA:6,0
+DA:7,0
+DA:8,0
+DA:9,0
+DA:11,0
+DA:13,0
+BRDA:5,187,1,0
+BRDA:5,187,0,0
+LF:7
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/Store/Index.cshtml
+FN:2,System.Void AspNetCoreGeneratedDocument.Views_Store_Index/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_Store_Index/<ExecuteAsync>d__0::MoveNext()
+DA:3,0
+DA:8,0
+DA:10,0
+DA:11,0
+DA:12,0
+DA:13,0
+BRDA:3,13,1,0
+BRDA:3,13,0,0
+BRDA:10,334,1,0
+BRDA:10,334,0,0
+LF:6
+LH:0
+BRF:4
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/StoreManager/Create.cshtml
+FN:9,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Create/<<ExecuteAsync>b__19_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Create/<<ExecuteAsync>b__19_0>d::MoveNext()
+DA:10,0
+DA:20,0
+DA:28,0
+BRDA:10,679,0,0
+BRDA:10,679,1,0
+BRDA:10,1260,0,0
+BRDA:10,1260,1,0
+BRDA:20,1932,0,0
+BRDA:20,1932,1,0
+BRDA:20,2513,0,0
+BRDA:20,2513,1,0
+BRDA:28,3185,0,0
+BRDA:28,3185,1,0
+BRDA:28,3782,0,0
+BRDA:28,3782,1,0
+BRDA:28,4379,0,0
+BRDA:28,4379,1,0
+BRDA:28,4998,0,0
+BRDA:28,4998,1,0
+BRDA:28,5595,0,0
+BRDA:28,5595,1,0
+BRDA:28,6192,0,0
+BRDA:28,6192,1,0
+BRDA:28,6811,0,0
+BRDA:28,6811,1,0
+BRDA:28,7408,0,0
+BRDA:28,7408,1,0
+BRDA:28,8005,0,0
+BRDA:28,8005,1,0
+BRDA:28,8624,0,0
+BRDA:28,8624,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Create/<ExecuteAsync>d__19::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Create/<ExecuteAsync>d__19::MoveNext()
+DA:4,0
+BRDA:4,74,1,0
+BRDA:4,74,0,0
+BRDA:4,595,0,0
+BRDA:4,595,1,0
+BRDA:4,1087,0,0
+BRDA:4,1087,1,0
+LF:4
+LH:0
+BRF:34
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/StoreManager/Delete.cshtml
+FN:13,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Delete/<<ExecuteAsync>b__12_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Delete/<<ExecuteAsync>b__12_0>d::MoveNext()
+DA:14,0
+BRDA:14,393,0,0
+BRDA:14,393,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Delete/<ExecuteAsync>d__12::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Delete/<ExecuteAsync>d__12::MoveNext()
+DA:4,0
+DA:10,0
+BRDA:4,51,1,0
+BRDA:4,51,0,0
+BRDA:10,617,0,0
+BRDA:10,617,1,0
+LF:3
+LH:0
+BRF:6
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/StoreManager/Details.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Details/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Details/<ExecuteAsync>d__0::MoveNext()
+DA:4,0
+DA:13,0
+DA:16,0
+DA:20,0
+DA:23,0
+DA:27,0
+DA:30,0
+DA:34,0
+DA:37,0
+DA:41,0
+DA:44,0
+DA:48,0
+DA:49,0
+BRDA:4,30,1,0
+BRDA:4,30,0,0
+LF:13
+LH:0
+BRF:2
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/StoreManager/Edit.cshtml
+FN:9,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Edit/<<ExecuteAsync>b__20_0>d::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Edit/<<ExecuteAsync>b__20_0>d::MoveNext()
+DA:10,0
+DA:22,0
+DA:30,0
+BRDA:10,697,0,0
+BRDA:10,697,1,0
+BRDA:10,1346,0,0
+BRDA:10,1346,1,0
+BRDA:10,1927,0,0
+BRDA:10,1927,1,0
+BRDA:22,2599,0,0
+BRDA:22,2599,1,0
+BRDA:22,3180,0,0
+BRDA:22,3180,1,0
+BRDA:30,3854,0,0
+BRDA:30,3854,1,0
+BRDA:30,4451,0,0
+BRDA:30,4451,1,0
+BRDA:30,5048,0,0
+BRDA:30,5048,1,0
+BRDA:30,5667,0,0
+BRDA:30,5667,1,0
+BRDA:30,6264,0,0
+BRDA:30,6264,1,0
+BRDA:30,6861,0,0
+BRDA:30,6861,1,0
+BRDA:30,7480,0,0
+BRDA:30,7480,1,0
+BRDA:30,8077,0,0
+BRDA:30,8077,1,0
+BRDA:30,8674,0,0
+BRDA:30,8674,1,0
+BRDA:30,9293,0,0
+BRDA:30,9293,1,0
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Edit/<ExecuteAsync>d__20::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Edit/<ExecuteAsync>d__20::MoveNext()
+DA:4,0
+BRDA:4,74,1,0
+BRDA:4,74,0,0
+BRDA:4,595,0,0
+BRDA:4,595,1,0
+BRDA:4,1087,0,0
+BRDA:4,1087,1,0
+LF:4
+LH:0
+BRF:36
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/StoreManager/Index.cshtml
+FN:3,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Index/<ExecuteAsync>d__11::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views_StoreManager_Index/<ExecuteAsync>d__11::MoveNext()
+DA:4,0
+DA:21,0
+DA:22,0
+DA:25,0
+DA:28,0
+DA:31,0
+DA:34,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:42,0
+BRDA:4,85,1,0
+BRDA:4,85,0,0
+BRDA:4,502,0,0
+BRDA:4,502,1,0
+BRDA:21,3292,1,0
+BRDA:25,833,0,0
+BRDA:25,833,1,0
+BRDA:28,885,0,0
+BRDA:28,885,1,0
+BRDA:28,897,0,0
+BRDA:28,897,1,0
+BRDA:28,947,0,0
+BRDA:28,961,0,0
+BRDA:28,961,1,0
+BRDA:28,947,1,0
+BRDA:31,1049,0,0
+BRDA:31,1049,1,0
+BRDA:31,1064,0,0
+BRDA:31,1064,1,0
+BRDA:34,1358,0,0
+BRDA:34,1358,1,0
+BRDA:37,1690,0,0
+BRDA:37,1690,1,0
+BRDA:37,2057,0,0
+BRDA:37,2057,1,0
+BRDA:38,2389,0,0
+BRDA:38,2389,1,0
+BRDA:38,2756,0,0
+BRDA:38,2756,1,0
+BRDA:39,3088,0,0
+BRDA:39,3088,1,0
+BRDA:21,3292,0,0
+LF:11
+LH:0
+BRF:32
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Views/_ViewStart.cshtml
+FN:1,System.Void AspNetCoreGeneratedDocument.Views__ViewStart/<ExecuteAsync>d__0::MoveNext()
+FNDA:0,System.Void AspNetCoreGeneratedDocument.Views__ViewStart/<ExecuteAsync>d__0::MoveNext()
+DA:2,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/ViewModels/ShoppingCartRemoveViewModel.cs
+FN:4,System.String MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_Message()
+FNDA:12,System.String MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_Message()
+DA:5,12
+FN:5,System.Decimal MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_CartTotal()
+FNDA:5,System.Decimal MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_CartTotal()
+DA:6,5
+FN:6,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_CartCount()
+FNDA:5,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_CartCount()
+DA:7,5
+FN:7,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_ItemCount()
+FNDA:5,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_ItemCount()
+DA:8,5
+FN:8,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_DeleteId()
+FNDA:5,System.Int32 MvcMusicStore.ViewModels.ShoppingCartRemoveViewModel::get_DeleteId()
+DA:9,5
+LF:5
+LH:5
+BRF:0
+BRH:0
+FNF:5
+FNH:5
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/ViewModels/ShoppingCartViewModel.cs
+FN:7,System.Collections.Generic.List`1<MvcMusicStore.Models.Cart> MvcMusicStore.ViewModels.ShoppingCartViewModel::get_CartItems()
+FNDA:22,System.Collections.Generic.List`1<MvcMusicStore.Models.Cart> MvcMusicStore.ViewModels.ShoppingCartViewModel::get_CartItems()
+DA:8,22
+FN:8,System.Decimal MvcMusicStore.ViewModels.ShoppingCartViewModel::get_CartTotal()
+FNDA:11,System.Decimal MvcMusicStore.ViewModels.ShoppingCartViewModel::get_CartTotal()
+DA:9,11
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/ViewComponents/CartSummaryViewComponent.cs
+FN:20,Microsoft.AspNetCore.Mvc.IViewComponentResult MvcMusicStore.ViewComponents.CartSummaryViewComponent::Invoke()
+FNDA:0,Microsoft.AspNetCore.Mvc.IViewComponentResult MvcMusicStore.ViewComponents.CartSummaryViewComponent::Invoke()
+DA:21,0
+DA:22,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:28,0
+DA:29,0
+DA:31,0
+DA:32,0
+BRDA:28,103,1,0
+BRDA:28,103,0,0
+BRDA:29,202,1,0
+BRDA:29,202,0,0
+BRDA:25,7,0,0
+BRDA:25,7,1,0
+BRDA:25,19,0,0
+BRDA:25,19,1,0
+FN:14,System.Void MvcMusicStore.ViewComponents.CartSummaryViewComponent::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:0,System.Void MvcMusicStore.ViewComponents.CartSummaryViewComponent::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:15,0
+DA:16,0
+DA:17,0
+DA:18,0
+LF:13
+LH:0
+BRF:8
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/ViewComponents/GenreMenuViewComponent.cs
+FN:15,System.Void MvcMusicStore.ViewComponents.GenreMenuViewComponent::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:0,System.Void MvcMusicStore.ViewComponents.GenreMenuViewComponent::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:16,0
+DA:17,0
+DA:18,0
+DA:19,0
+FN:21,System.Void MvcMusicStore.ViewComponents.GenreMenuViewComponent/<InvokeAsync>d__2::MoveNext()
+FNDA:0,System.Void MvcMusicStore.ViewComponents.GenreMenuViewComponent/<InvokeAsync>d__2::MoveNext()
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+LF:13
+LH:0
+BRF:0
+BRH:0
+FNF:2
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/AccountModels.cs
+FN:16,System.String MvcMusicStore.Models.RegisterExternalLoginModel::get_UserName()
+FNDA:6,System.String MvcMusicStore.Models.RegisterExternalLoginModel::get_UserName()
+DA:17,6
+FN:18,System.String MvcMusicStore.Models.RegisterExternalLoginModel::get_ExternalLoginData()
+FNDA:6,System.String MvcMusicStore.Models.RegisterExternalLoginModel::get_ExternalLoginData()
+DA:19,6
+FN:26,System.String MvcMusicStore.Models.LocalPasswordModel::get_OldPassword()
+FNDA:7,System.String MvcMusicStore.Models.LocalPasswordModel::get_OldPassword()
+DA:27,7
+FN:32,System.String MvcMusicStore.Models.LocalPasswordModel::get_NewPassword()
+FNDA:7,System.String MvcMusicStore.Models.LocalPasswordModel::get_NewPassword()
+DA:33,7
+FN:37,System.String MvcMusicStore.Models.LocalPasswordModel::get_ConfirmPassword()
+FNDA:7,System.String MvcMusicStore.Models.LocalPasswordModel::get_ConfirmPassword()
+DA:38,7
+FN:44,System.String MvcMusicStore.Models.LoginModel::get_UserName()
+FNDA:7,System.String MvcMusicStore.Models.LoginModel::get_UserName()
+DA:45,7
+FN:49,System.String MvcMusicStore.Models.LoginModel::get_Password()
+FNDA:7,System.String MvcMusicStore.Models.LoginModel::get_Password()
+DA:50,7
+FN:52,System.Boolean MvcMusicStore.Models.LoginModel::get_RememberMe()
+FNDA:3,System.Boolean MvcMusicStore.Models.LoginModel::get_RememberMe()
+DA:53,3
+FN:59,System.String MvcMusicStore.Models.RegisterModel::get_UserName()
+FNDA:7,System.String MvcMusicStore.Models.RegisterModel::get_UserName()
+DA:60,7
+FN:65,System.String MvcMusicStore.Models.RegisterModel::get_Password()
+FNDA:7,System.String MvcMusicStore.Models.RegisterModel::get_Password()
+DA:66,7
+FN:70,System.String MvcMusicStore.Models.RegisterModel::get_ConfirmPassword()
+FNDA:7,System.String MvcMusicStore.Models.RegisterModel::get_ConfirmPassword()
+DA:71,7
+FN:75,System.String MvcMusicStore.Models.ExternalLogin::get_Provider()
+FNDA:10,System.String MvcMusicStore.Models.ExternalLogin::get_Provider()
+DA:76,10
+FN:76,System.String MvcMusicStore.Models.ExternalLogin::get_ProviderDisplayName()
+FNDA:10,System.String MvcMusicStore.Models.ExternalLogin::get_ProviderDisplayName()
+DA:77,10
+FN:77,System.String MvcMusicStore.Models.ExternalLogin::get_ProviderUserId()
+FNDA:10,System.String MvcMusicStore.Models.ExternalLogin::get_ProviderUserId()
+DA:78,10
+LF:14
+LH:14
+BRF:0
+BRH:0
+FNF:14
+FNH:14
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/Album.cs
+FN:9,System.Int32 MvcMusicStore.Models.Album::get_AlbumId()
+FNDA:41,System.Int32 MvcMusicStore.Models.Album::get_AlbumId()
+DA:10,41
+FN:11,System.Int32 MvcMusicStore.Models.Album::get_GenreId()
+FNDA:101,System.Int32 MvcMusicStore.Models.Album::get_GenreId()
+DA:12,101
+FN:13,System.Int32 MvcMusicStore.Models.Album::get_ArtistId()
+FNDA:101,System.Int32 MvcMusicStore.Models.Album::get_ArtistId()
+DA:14,101
+FN:17,System.String MvcMusicStore.Models.Album::get_Title()
+FNDA:226,System.String MvcMusicStore.Models.Album::get_Title()
+DA:18,226
+FN:22,System.Decimal MvcMusicStore.Models.Album::get_Price()
+FNDA:107,System.Decimal MvcMusicStore.Models.Album::get_Price()
+DA:23,107
+FN:26,System.String MvcMusicStore.Models.Album::get_AlbumArtUrl()
+FNDA:118,System.String MvcMusicStore.Models.Album::get_AlbumArtUrl()
+DA:27,118
+FN:28,MvcMusicStore.Models.Genre MvcMusicStore.Models.Album::get_Genre()
+FNDA:4,MvcMusicStore.Models.Genre MvcMusicStore.Models.Album::get_Genre()
+DA:29,4
+FN:29,MvcMusicStore.Models.Artist MvcMusicStore.Models.Album::get_Artist()
+FNDA:4,MvcMusicStore.Models.Artist MvcMusicStore.Models.Album::get_Artist()
+DA:30,4
+FN:30,System.Collections.Generic.List`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Models.Album::get_OrderDetails()
+FNDA:118,System.Collections.Generic.List`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Models.Album::get_OrderDetails()
+DA:31,118
+LF:9
+LH:9
+BRF:0
+BRH:0
+FNF:9
+FNH:9
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/Artist.cs
+FN:4,System.Int32 MvcMusicStore.Models.Artist::get_ArtistId()
+FNDA:100,System.Int32 MvcMusicStore.Models.Artist::get_ArtistId()
+DA:5,100
+FN:5,System.String MvcMusicStore.Models.Artist::get_Name()
+FNDA:134,System.String MvcMusicStore.Models.Artist::get_Name()
+DA:6,134
+LF:2
+LH:2
+BRF:0
+BRH:0
+FNF:2
+FNH:2
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/Cart.cs
+FN:8,System.Int32 MvcMusicStore.Models.Cart::get_RecordId()
+FNDA:13,System.Int32 MvcMusicStore.Models.Cart::get_RecordId()
+DA:9,13
+FN:9,System.String MvcMusicStore.Models.Cart::get_CartId()
+FNDA:52,System.String MvcMusicStore.Models.Cart::get_CartId()
+DA:10,52
+FN:10,System.Int32 MvcMusicStore.Models.Cart::get_AlbumId()
+FNDA:22,System.Int32 MvcMusicStore.Models.Cart::get_AlbumId()
+DA:11,22
+FN:11,System.Int32 MvcMusicStore.Models.Cart::get_Count()
+FNDA:34,System.Int32 MvcMusicStore.Models.Cart::get_Count()
+DA:12,34
+FN:14,System.DateTime MvcMusicStore.Models.Cart::get_DateCreated()
+FNDA:17,System.DateTime MvcMusicStore.Models.Cart::get_DateCreated()
+DA:15,17
+FN:16,MvcMusicStore.Models.Album MvcMusicStore.Models.Cart::get_Album()
+FNDA:31,MvcMusicStore.Models.Album MvcMusicStore.Models.Cart::get_Album()
+DA:17,31
+LF:6
+LH:6
+BRF:0
+BRH:0
+FNF:6
+FNH:6
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/Genre.cs
+FN:6,System.Int32 MvcMusicStore.Models.Genre::get_GenreId()
+FNDA:98,System.Int32 MvcMusicStore.Models.Genre::get_GenreId()
+DA:7,98
+FN:7,System.String MvcMusicStore.Models.Genre::get_Name()
+FNDA:135,System.String MvcMusicStore.Models.Genre::get_Name()
+DA:8,135
+FN:8,System.String MvcMusicStore.Models.Genre::get_Description()
+FNDA:111,System.String MvcMusicStore.Models.Genre::get_Description()
+DA:9,111
+FN:9,System.Collections.Generic.List`1<MvcMusicStore.Models.Album> MvcMusicStore.Models.Genre::get_Albums()
+FNDA:76,System.Collections.Generic.List`1<MvcMusicStore.Models.Album> MvcMusicStore.Models.Genre::get_Albums()
+DA:10,76
+LF:4
+LH:4
+BRF:0
+BRH:0
+FNF:4
+FNH:4
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/Order.cs
+FN:14,System.Int32 MvcMusicStore.Models.Order::get_OrderId()
+FNDA:8,System.Int32 MvcMusicStore.Models.Order::get_OrderId()
+DA:15,8
+FN:17,System.DateTime MvcMusicStore.Models.Order::get_OrderDate()
+FNDA:4,System.DateTime MvcMusicStore.Models.Order::get_OrderDate()
+DA:18,4
+FN:20,System.String MvcMusicStore.Models.Order::get_Username()
+FNDA:34,System.String MvcMusicStore.Models.Order::get_Username()
+DA:21,34
+FN:25,System.String MvcMusicStore.Models.Order::get_FirstName()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_FirstName()
+DA:26,35
+FN:30,System.String MvcMusicStore.Models.Order::get_LastName()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_LastName()
+DA:31,35
+FN:34,System.String MvcMusicStore.Models.Order::get_Address()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_Address()
+DA:35,35
+FN:38,System.String MvcMusicStore.Models.Order::get_City()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_City()
+DA:39,35
+FN:42,System.String MvcMusicStore.Models.Order::get_State()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_State()
+DA:43,35
+FN:47,System.String MvcMusicStore.Models.Order::get_PostalCode()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_PostalCode()
+DA:48,35
+FN:51,System.String MvcMusicStore.Models.Order::get_Country()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_Country()
+DA:52,35
+FN:56,System.String MvcMusicStore.Models.Order::get_Phone()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_Phone()
+DA:57,35
+FN:63,System.String MvcMusicStore.Models.Order::get_Email()
+FNDA:35,System.String MvcMusicStore.Models.Order::get_Email()
+DA:64,35
+FN:66,System.Decimal MvcMusicStore.Models.Order::get_Total()
+FNDA:7,System.Decimal MvcMusicStore.Models.Order::get_Total()
+DA:67,7
+FN:68,System.Collections.Generic.List`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Models.Order::get_OrderDetails()
+FNDA:29,System.Collections.Generic.List`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Models.Order::get_OrderDetails()
+DA:69,29
+LF:14
+LH:14
+BRF:0
+BRH:0
+FNF:14
+FNH:14
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/OrderDetail.cs
+FN:4,System.Int32 MvcMusicStore.Models.OrderDetail::get_OrderDetailId()
+FNDA:8,System.Int32 MvcMusicStore.Models.OrderDetail::get_OrderDetailId()
+DA:5,8
+FN:5,System.Int32 MvcMusicStore.Models.OrderDetail::get_OrderId()
+FNDA:6,System.Int32 MvcMusicStore.Models.OrderDetail::get_OrderId()
+DA:6,6
+FN:6,System.Int32 MvcMusicStore.Models.OrderDetail::get_AlbumId()
+FNDA:6,System.Int32 MvcMusicStore.Models.OrderDetail::get_AlbumId()
+DA:7,6
+FN:7,System.Int32 MvcMusicStore.Models.OrderDetail::get_Quantity()
+FNDA:11,System.Int32 MvcMusicStore.Models.OrderDetail::get_Quantity()
+DA:8,11
+FN:8,System.Decimal MvcMusicStore.Models.OrderDetail::get_UnitPrice()
+FNDA:9,System.Decimal MvcMusicStore.Models.OrderDetail::get_UnitPrice()
+DA:9,9
+FN:10,MvcMusicStore.Models.Album MvcMusicStore.Models.OrderDetail::get_Album()
+FNDA:16,MvcMusicStore.Models.Album MvcMusicStore.Models.OrderDetail::get_Album()
+DA:11,16
+FN:11,MvcMusicStore.Models.Order MvcMusicStore.Models.OrderDetail::get_Order()
+FNDA:16,MvcMusicStore.Models.Order MvcMusicStore.Models.OrderDetail::get_Order()
+DA:12,16
+LF:7
+LH:7
+BRF:0
+BRH:0
+FNF:7
+FNH:7
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Models/ShoppingCart.cs
+FN:11,System.String MvcMusicStore.Models.ShoppingCart::get_ShoppingCartId()
+FNDA:46,System.String MvcMusicStore.Models.ShoppingCart::get_ShoppingCartId()
+DA:12,46
+FN:24,MvcMusicStore.Models.ShoppingCart MvcMusicStore.Models.ShoppingCart::GetCart(MvcMusicStore.Data.ApplicationDbContext,Microsoft.AspNetCore.Http.HttpContext)
+FNDA:3,MvcMusicStore.Models.ShoppingCart MvcMusicStore.Models.ShoppingCart::GetCart(MvcMusicStore.Data.ApplicationDbContext,Microsoft.AspNetCore.Http.HttpContext)
+DA:25,3
+DA:26,3
+DA:27,3
+DA:28,3
+DA:29,3
+FN:31,System.Void MvcMusicStore.Models.ShoppingCart::AddToCart(MvcMusicStore.Models.Album)
+FNDA:3,System.Void MvcMusicStore.Models.ShoppingCart::AddToCart(MvcMusicStore.Models.Album)
+DA:32,3
+DA:33,3
+DA:34,3
+DA:36,3
+DA:37,2
+DA:38,2
+DA:39,2
+DA:40,2
+DA:41,2
+DA:42,2
+DA:43,2
+DA:44,2
+DA:45,2
+DA:46,2
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,3
+BRDA:36,224,0,2
+BRDA:36,224,1,1
+FN:53,System.Int32 MvcMusicStore.Models.ShoppingCart::RemoveFromCart(System.Int32)
+FNDA:2,System.Int32 MvcMusicStore.Models.ShoppingCart::RemoveFromCart(System.Int32)
+DA:54,2
+DA:55,2
+DA:56,2
+DA:58,2
+DA:60,2
+DA:61,2
+DA:62,2
+DA:63,1
+DA:64,1
+DA:65,1
+DA:66,1
+DA:68,1
+DA:69,1
+DA:70,1
+DA:71,2
+DA:73,2
+DA:74,2
+BRDA:60,208,0,2
+BRDA:62,224,0,1
+BRDA:62,224,1,1
+BRDA:60,208,1,0
+FN:76,System.Void MvcMusicStore.Models.ShoppingCart::EmptyCart()
+FNDA:1,System.Void MvcMusicStore.Models.ShoppingCart::EmptyCart()
+DA:77,1
+DA:78,1
+DA:79,7
+DA:80,2
+DA:81,2
+DA:82,2
+DA:83,1
+BRDA:79,159,1,2
+BRDA:79,159,0,1
+FN:85,System.Collections.Generic.List`1<MvcMusicStore.Models.Cart> MvcMusicStore.Models.ShoppingCart::GetCartItems()
+FNDA:5,System.Collections.Generic.List`1<MvcMusicStore.Models.Cart> MvcMusicStore.Models.ShoppingCart::GetCartItems()
+DA:86,5
+DA:87,5
+DA:88,5
+DA:89,5
+DA:90,5
+FN:92,System.Int32 MvcMusicStore.Models.ShoppingCart::GetCount()
+FNDA:2,System.Int32 MvcMusicStore.Models.ShoppingCart::GetCount()
+DA:93,2
+DA:94,2
+DA:95,2
+DA:96,2
+DA:97,2
+DA:98,2
+FN:100,System.Decimal MvcMusicStore.Models.ShoppingCart::GetTotal()
+FNDA:3,System.Decimal MvcMusicStore.Models.ShoppingCart::GetTotal()
+DA:101,3
+DA:102,3
+DA:103,3
+DA:104,3
+DA:105,3
+DA:106,3
+FN:108,System.Int32 MvcMusicStore.Models.ShoppingCart::CreateOrder(MvcMusicStore.Models.Order)
+FNDA:0,System.Int32 MvcMusicStore.Models.ShoppingCart::CreateOrder(MvcMusicStore.Models.Order)
+DA:109,0
+DA:110,0
+DA:111,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:118,0
+DA:119,0
+DA:120,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+BRDA:113,210,1,0
+BRDA:116,85,1,0
+BRDA:116,85,0,0
+BRDA:113,210,0,0
+FN:138,System.String MvcMusicStore.Models.ShoppingCart::GetCartId(Microsoft.AspNetCore.Http.HttpContext)
+FNDA:3,System.String MvcMusicStore.Models.ShoppingCart::GetCartId(Microsoft.AspNetCore.Http.HttpContext)
+DA:139,3
+DA:140,3
+DA:141,3
+DA:142,3
+DA:143,3
+DA:144,0
+DA:145,0
+DA:146,0
+DA:148,3
+DA:149,3
+DA:150,3
+DA:151,3
+DA:152,3
+DA:153,3
+DA:154,3
+BRDA:141,24,0,3
+BRDA:143,39,0,0
+BRDA:143,39,1,3
+BRDA:143,60,0,0
+BRDA:143,60,1,3
+BRDA:141,24,1,0
+FN:159,System.Void MvcMusicStore.Models.ShoppingCart::MigrateCart(System.String)
+FNDA:1,System.Void MvcMusicStore.Models.ShoppingCart::MigrateCart(System.String)
+DA:160,1
+DA:161,1
+DA:162,5
+DA:163,1
+DA:164,1
+DA:165,1
+DA:166,1
+BRDA:162,149,1,1
+BRDA:162,149,0,1
+FN:13,System.Void MvcMusicStore.Models.ShoppingCart::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:14,System.Void MvcMusicStore.Models.ShoppingCart::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:14,14
+DA:15,14
+DA:16,14
+DA:17,14
+LF:112
+LH:88
+BRF:20
+BRH:12
+FNF:12
+FNH:11
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Data/ApplicationDbContext.cs
+FN:17,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Album> MvcMusicStore.Data.ApplicationDbContext::get_Albums()
+FNDA:253,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Album> MvcMusicStore.Data.ApplicationDbContext::get_Albums()
+DA:18,253
+FN:18,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Genre> MvcMusicStore.Data.ApplicationDbContext::get_Genres()
+FNDA:207,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Genre> MvcMusicStore.Data.ApplicationDbContext::get_Genres()
+DA:19,207
+FN:19,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Artist> MvcMusicStore.Data.ApplicationDbContext::get_Artists()
+FNDA:201,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Artist> MvcMusicStore.Data.ApplicationDbContext::get_Artists()
+DA:20,201
+FN:20,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Cart> MvcMusicStore.Data.ApplicationDbContext::get_Carts()
+FNDA:181,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Cart> MvcMusicStore.Data.ApplicationDbContext::get_Carts()
+DA:21,181
+FN:21,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Order> MvcMusicStore.Data.ApplicationDbContext::get_Orders()
+FNDA:148,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.Order> MvcMusicStore.Data.ApplicationDbContext::get_Orders()
+DA:22,148
+FN:22,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Data.ApplicationDbContext::get_OrderDetails()
+FNDA:147,Microsoft.EntityFrameworkCore.DbSet`1<MvcMusicStore.Models.OrderDetail> MvcMusicStore.Data.ApplicationDbContext::get_OrderDetails()
+DA:23,147
+FN:25,System.Void MvcMusicStore.Data.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+FNDA:1,System.Void MvcMusicStore.Data.ApplicationDbContext::OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder)
+DA:26,1
+DA:27,1
+DA:29,1
+DA:30,1
+DA:31,1
+DA:32,1
+DA:33,2
+DA:35,1
+DA:36,1
+DA:37,1
+DA:38,1
+DA:39,2
+DA:41,1
+DA:42,1
+DA:43,1
+DA:44,1
+DA:45,2
+DA:46,1
+FN:13,System.Void MvcMusicStore.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<MvcMusicStore.Data.ApplicationDbContext>)
+FNDA:72,System.Void MvcMusicStore.Data.ApplicationDbContext::.ctor(Microsoft.EntityFrameworkCore.DbContextOptions`1<MvcMusicStore.Data.ApplicationDbContext>)
+DA:14,72
+DA:15,72
+DA:16,72
+LF:27
+LH:27
+BRF:0
+BRH:0
+FNF:8
+FNH:8
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Data/DbInitializer.cs
+FN:120,MvcMusicStore.Models.Genre MvcMusicStore.Data.DbInitializer::<SeedAsync>g__Rock|0_0(System.String,MvcMusicStore.Data.DbInitializer/<>c__DisplayClass0_0&)
+FNDA:0,MvcMusicStore.Models.Genre MvcMusicStore.Data.DbInitializer::<SeedAsync>g__Rock|0_0(System.String,MvcMusicStore.Data.DbInitializer/<>c__DisplayClass0_0&)
+DA:121,0
+FN:121,MvcMusicStore.Models.Artist MvcMusicStore.Data.DbInitializer::<SeedAsync>g__Art|0_1(System.String,MvcMusicStore.Data.DbInitializer/<>c__DisplayClass0_0&)
+FNDA:0,MvcMusicStore.Models.Artist MvcMusicStore.Data.DbInitializer::<SeedAsync>g__Art|0_1(System.String,MvcMusicStore.Data.DbInitializer/<>c__DisplayClass0_0&)
+DA:122,0
+FN:17,System.Void MvcMusicStore.Data.DbInitializer/<SeedAsync>d__0::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Data.DbInitializer/<SeedAsync>d__0::MoveNext()
+DA:18,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:27,0
+DA:28,0
+DA:30,0
+DA:31,0
+DA:32,0
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+DA:37,0
+DA:38,0
+DA:39,0
+DA:40,0
+DA:41,0
+DA:42,0
+DA:43,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:48,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:54,0
+DA:55,0
+DA:59,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:68,0
+DA:69,0
+DA:70,0
+DA:71,0
+DA:72,0
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+DA:77,0
+DA:78,0
+DA:80,0
+DA:81,0
+DA:82,0
+DA:83,0
+DA:84,0
+DA:85,0
+DA:86,0
+DA:87,0
+DA:88,0
+DA:89,0
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:95,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:101,0
+DA:102,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:108,0
+DA:109,0
+DA:110,0
+DA:111,0
+DA:112,0
+DA:113,0
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:124,0
+DA:125,0
+DA:126,0
+DA:127,0
+DA:128,0
+DA:129,0
+DA:130,0
+DA:131,0
+DA:132,0
+DA:133,0
+DA:134,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:138,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:148,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:155,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:162,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:169,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:176,0
+DA:177,0
+DA:178,0
+DA:179,0
+DA:180,0
+DA:181,0
+DA:182,0
+DA:183,0
+BRDA:21,243,0,0
+BRDA:21,243,1,0
+BRDA:27,379,0,0
+BRDA:27,379,1,0
+BRDA:28,410,0,0
+BRDA:28,410,1,0
+BRDA:30,551,0,0
+BRDA:39,774,0,0
+BRDA:39,774,1,0
+BRDA:30,551,1,0
+BRDA:47,1081,0,0
+BRDA:47,1081,1,0
+BRDA:47,1231,0,0
+BRDA:47,1231,1,0
+BRDA:54,1492,0,0
+BRDA:54,1492,1,0
+LF:152
+LH:0
+BRF:16
+BRH:0
+FNF:3
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/AccountController.cs
+FN:32,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::Login(System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::Login(System.String)
+DA:33,0
+DA:34,0
+DA:35,0
+DA:36,0
+BRDA:34,6,1,0
+BRDA:34,6,0,0
+FN:80,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::Register()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::Register()
+DA:81,0
+DA:82,0
+DA:83,0
+FN:184,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::ExternalLogin(System.String,System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::ExternalLogin(System.String,System.String)
+DA:185,0
+DA:186,0
+DA:187,0
+DA:188,0
+DA:189,0
+FN:270,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::ExternalLoginFailure()
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::ExternalLoginFailure()
+DA:271,0
+DA:272,0
+DA:273,0
+FN:302,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::RedirectToLocal(System.String)
+FNDA:0,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.AccountController::RedirectToLocal(System.String)
+DA:303,0
+DA:304,0
+DA:305,0
+DA:306,0
+DA:308,0
+DA:309,0
+BRDA:304,7,0,0
+BRDA:304,7,1,0
+BRDA:304,26,0,0
+BRDA:304,26,1,0
+FN:19,System.Void MvcMusicStore.Controllers.AccountController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<MvcMusicStore.Models.ApplicationUser>,Microsoft.AspNetCore.Identity.SignInManager`1<MvcMusicStore.Models.ApplicationUser>,MvcMusicStore.Data.ApplicationDbContext)
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController::.ctor(Microsoft.AspNetCore.Identity.UserManager`1<MvcMusicStore.Models.ApplicationUser>,Microsoft.AspNetCore.Identity.SignInManager`1<MvcMusicStore.Models.ApplicationUser>,MvcMusicStore.Data.ApplicationDbContext)
+DA:20,0
+DA:21,0
+DA:22,0
+DA:23,0
+DA:24,0
+DA:25,0
+DA:26,0
+DA:27,0
+DA:28,0
+FN:278,System.Void MvcMusicStore.Controllers.AccountController/<Disassociate>d__16::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<Disassociate>d__16::MoveNext()
+DA:279,0
+DA:280,0
+DA:281,0
+DA:282,0
+DA:284,0
+DA:285,0
+DA:287,0
+DA:288,0
+DA:289,0
+DA:290,0
+DA:291,0
+DA:292,0
+DA:293,0
+DA:294,0
+DA:295,0
+DA:297,0
+DA:298,0
+BRDA:282,224,0,0
+BRDA:282,224,1,0
+BRDA:287,520,0,0
+BRDA:287,520,1,0
+BRDA:287,543,0,0
+BRDA:290,715,0,0
+BRDA:290,715,1,0
+BRDA:287,543,1,0
+FN:193,System.Void MvcMusicStore.Controllers.AccountController/<ExternalLoginCallback>d__13::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<ExternalLoginCallback>d__13::MoveNext()
+DA:194,0
+DA:195,0
+DA:196,0
+DA:197,0
+DA:198,0
+DA:201,0
+DA:202,0
+DA:204,0
+DA:205,0
+DA:206,0
+DA:209,0
+DA:210,0
+DA:211,0
+DA:212,0
+DA:213,0
+DA:214,0
+DA:215,0
+DA:216,0
+DA:219,0
+DA:220,0
+DA:221,0
+DA:222,0
+DA:223,0
+DA:225,0
+BRDA:196,193,0,0
+BRDA:196,193,1,0
+BRDA:204,389,0,0
+BRDA:204,389,1,0
+BRDA:209,432,0,0
+BRDA:209,432,1,0
+BRDA:209,447,0,0
+BRDA:212,610,0,0
+BRDA:212,610,1,0
+BRDA:209,447,1,0
+BRDA:220,764,1,0
+BRDA:220,764,0,0
+BRDA:221,873,1,0
+BRDA:221,873,0,0
+BRDA:222,995,0,0
+BRDA:222,995,1,0
+BRDA:222,1007,0,0
+BRDA:222,1007,1,0
+FN:231,System.Void MvcMusicStore.Controllers.AccountController/<ExternalLoginConfirmation>d__14::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<ExternalLoginConfirmation>d__14::MoveNext()
+DA:232,0
+DA:233,0
+DA:234,0
+DA:235,0
+DA:238,0
+DA:239,0
+DA:240,0
+DA:241,0
+DA:242,0
+DA:243,0
+DA:246,0
+DA:247,0
+DA:248,0
+DA:249,0
+DA:250,0
+DA:251,0
+DA:252,0
+DA:253,0
+DA:254,0
+DA:256,0
+DA:258,0
+DA:259,0
+DA:260,0
+DA:261,0
+DA:262,0
+DA:264,0
+DA:265,0
+DA:266,0
+BRDA:233,69,0,0
+BRDA:233,69,1,0
+BRDA:233,82,0,0
+BRDA:233,82,1,0
+BRDA:238,125,0,0
+BRDA:241,279,0,0
+BRDA:241,279,1,0
+BRDA:248,516,0,0
+BRDA:251,683,0,0
+BRDA:251,683,1,0
+BRDA:248,516,1,0
+BRDA:258,926,1,0
+BRDA:258,926,0,0
+BRDA:238,125,1,0
+BRDA:264,989,1,0
+BRDA:264,989,0,0
+FN:72,System.Void MvcMusicStore.Controllers.AccountController/<LogOff>d__7::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<LogOff>d__7::MoveNext()
+DA:73,0
+DA:74,0
+DA:75,0
+DA:76,0
+FN:42,System.Void MvcMusicStore.Controllers.AccountController/<Login>d__5::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<Login>d__5::MoveNext()
+DA:43,0
+DA:44,0
+DA:45,0
+DA:46,0
+DA:47,0
+DA:49,0
+DA:50,0
+DA:51,0
+DA:52,0
+DA:54,0
+DA:56,0
+DA:57,0
+DA:58,0
+BRDA:44,47,0,0
+BRDA:49,233,0,0
+BRDA:49,233,1,0
+BRDA:44,47,1,0
+FN:113,System.Void MvcMusicStore.Controllers.AccountController/<Manage>d__10::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<Manage>d__10::MoveNext()
+DA:114,0
+DA:115,0
+DA:116,0
+DA:117,0
+DA:118,0
+DA:119,0
+DA:121,0
+DA:122,0
+DA:123,0
+DA:124,0
+DA:125,0
+BRDA:115,34,1,0
+BRDA:115,34,0,0
+BRDA:115,148,0,0
+BRDA:115,162,0,0
+BRDA:115,176,0,0
+BRDA:115,176,1,0
+BRDA:115,162,1,0
+BRDA:115,148,1,0
+BRDA:122,360,1,0
+BRDA:122,360,0,0
+BRDA:122,498,0,0
+BRDA:122,498,1,0
+BRDA:123,692,1,0
+BRDA:123,692,0,0
+FN:130,System.Void MvcMusicStore.Controllers.AccountController/<Manage>d__11::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<Manage>d__11::MoveNext()
+DA:131,0
+DA:132,0
+DA:133,0
+DA:135,0
+DA:136,0
+DA:137,0
+DA:139,0
+DA:140,0
+DA:141,0
+DA:142,0
+DA:143,0
+DA:144,0
+DA:145,0
+DA:146,0
+DA:147,0
+DA:149,0
+DA:150,0
+DA:151,0
+DA:152,0
+DA:153,0
+DA:154,0
+DA:156,0
+DA:157,0
+DA:158,0
+DA:159,0
+DA:160,0
+DA:161,0
+DA:163,0
+DA:164,0
+DA:165,0
+DA:166,0
+DA:167,0
+DA:168,0
+DA:170,0
+DA:171,0
+DA:172,0
+DA:173,0
+DA:174,0
+DA:175,0
+DA:177,0
+DA:178,0
+BRDA:133,212,0,0
+BRDA:133,212,1,0
+BRDA:136,368,1,0
+BRDA:136,368,0,0
+BRDA:137,472,1,0
+BRDA:137,472,0,0
+BRDA:139,596,0,0
+BRDA:141,622,0,0
+BRDA:144,804,0,0
+BRDA:144,804,1,0
+BRDA:149,1048,1,0
+BRDA:149,1048,0,0
+BRDA:141,622,1,0
+BRDA:139,596,1,0
+BRDA:158,1139,0,0
+BRDA:158,1139,1,0
+BRDA:163,1180,0,0
+BRDA:166,1351,0,0
+BRDA:166,1351,1,0
+BRDA:170,1477,1,0
+BRDA:170,1477,0,0
+BRDA:163,1180,1,0
+FN:60,System.Void MvcMusicStore.Controllers.AccountController/<MigrateShoppingCartAsync>d__6::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<MigrateShoppingCartAsync>d__6::MoveNext()
+DA:61,0
+DA:62,0
+DA:63,0
+DA:65,0
+DA:66,0
+DA:67,0
+FN:89,System.Void MvcMusicStore.Controllers.AccountController/<Register>d__9::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.AccountController/<Register>d__9::MoveNext()
+DA:90,0
+DA:91,0
+DA:92,0
+DA:93,0
+DA:94,0
+DA:96,0
+DA:97,0
+DA:98,0
+DA:99,0
+DA:100,0
+DA:103,0
+DA:104,0
+DA:105,0
+DA:106,0
+DA:107,0
+DA:109,0
+DA:110,0
+BRDA:91,61,0,0
+BRDA:96,287,0,0
+BRDA:96,287,1,0
+BRDA:103,649,1,0
+BRDA:103,649,0,0
+BRDA:91,61,1,0
+LF:191
+LH:0
+BRF:94
+BRH:0
+FNF:15
+FNH:0
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/CheckoutController.cs
+FN:21,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.CheckoutController::AddressAndPayment()
+FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.CheckoutController::AddressAndPayment()
+DA:22,1
+DA:23,1
+DA:24,1
+FN:14,System.Void MvcMusicStore.Controllers.CheckoutController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:7,System.Void MvcMusicStore.Controllers.CheckoutController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:15,7
+DA:16,7
+DA:17,7
+DA:18,7
+FN:30,System.Void MvcMusicStore.Controllers.CheckoutController/<AddressAndPayment>d__4::MoveNext()
+FNDA:5,System.Void MvcMusicStore.Controllers.CheckoutController/<AddressAndPayment>d__4::MoveNext()
+DA:31,5
+DA:32,5
+DA:33,1
+DA:35,4
+DA:36,4
+DA:37,4
+DA:38,4
+DA:42,0
+DA:43,0
+DA:44,0
+DA:46,0
+DA:48,0
+DA:49,0
+DA:51,0
+DA:53,0
+DA:55,0
+DA:56,0
+DA:57,0
+DA:59,5
+BRDA:32,36,0,1
+BRDA:32,36,1,4
+BRDA:35,83,0,4
+BRDA:35,83,1,0
+BRDA:43,171,0,0
+BRDA:43,171,1,0
+BRDA:43,183,0,0
+BRDA:43,183,1,0
+FN:62,System.Void MvcMusicStore.Controllers.CheckoutController/<Complete>d__5::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.CheckoutController/<Complete>d__5::MoveNext()
+DA:63,0
+DA:64,0
+DA:65,0
+DA:67,0
+DA:68,0
+DA:70,0
+DA:71,0
+BRDA:67,422,0,0
+BRDA:67,422,1,0
+LF:33
+LH:15
+BRF:10
+BRH:3
+FNF:4
+FNH:3
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/HomeController.cs
+FN:24,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::About()
+FNDA:2,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::About()
+DA:25,2
+DA:26,2
+DA:27,2
+DA:28,2
+BRDA:26,6,1,1
+BRDA:26,6,0,2
+FN:30,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::Contact()
+FNDA:2,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::Contact()
+DA:31,2
+DA:32,2
+DA:33,2
+DA:34,2
+BRDA:32,6,1,1
+BRDA:32,6,0,2
+FN:36,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::Error()
+FNDA:1,Microsoft.AspNetCore.Mvc.IActionResult MvcMusicStore.Controllers.HomeController::Error()
+DA:37,1
+DA:38,1
+DA:39,1
+FN:11,System.Void MvcMusicStore.Controllers.HomeController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:9,System.Void MvcMusicStore.Controllers.HomeController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:12,9
+DA:13,9
+DA:14,9
+DA:15,9
+FN:41,System.Void MvcMusicStore.Controllers.HomeController/<GetTopSellingAlbumsAsync>d__6::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.HomeController/<GetTopSellingAlbumsAsync>d__6::MoveNext()
+DA:42,3
+DA:43,3
+DA:44,3
+DA:45,3
+DA:46,3
+DA:47,3
+FN:18,System.Void MvcMusicStore.Controllers.HomeController/<Index>d__2::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.HomeController/<Index>d__2::MoveNext()
+DA:19,3
+DA:20,3
+DA:21,3
+DA:22,3
+LF:25
+LH:25
+BRF:4
+BRH:4
+FNF:6
+FNH:6
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/ShoppingCartController.cs
+FN:12,System.Void MvcMusicStore.Controllers.ShoppingCartController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:4,System.Void MvcMusicStore.Controllers.ShoppingCartController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:13,4
+DA:14,4
+DA:15,4
+DA:16,4
+FN:33,System.Void MvcMusicStore.Controllers.ShoppingCartController/<AddToCart>d__3::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.ShoppingCartController/<AddToCart>d__3::MoveNext()
+DA:34,0
+DA:35,0
+DA:37,0
+DA:38,0
+DA:40,0
+DA:42,0
+DA:43,0
+FN:19,System.Void MvcMusicStore.Controllers.ShoppingCartController/<Index>d__2::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.ShoppingCartController/<Index>d__2::MoveNext()
+DA:20,3
+DA:21,3
+DA:23,3
+DA:24,3
+DA:25,3
+DA:26,3
+DA:27,3
+DA:29,3
+DA:30,3
+FN:47,System.Void MvcMusicStore.Controllers.ShoppingCartController/<RemoveFromCart>d__4::MoveNext()
+FNDA:0,System.Void MvcMusicStore.Controllers.ShoppingCartController/<RemoveFromCart>d__4::MoveNext()
+DA:48,0
+DA:49,0
+DA:51,0
+DA:52,0
+DA:53,0
+DA:55,0
+DA:56,0
+DA:58,0
+DA:60,0
+DA:61,0
+DA:62,0
+DA:63,0
+DA:64,0
+DA:65,0
+DA:66,0
+DA:67,0
+DA:69,0
+DA:70,0
+BRDA:58,562,0,0
+BRDA:58,562,1,0
+LF:38
+LH:13
+BRF:2
+BRH:0
+FNF:4
+FNH:2
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/StoreController.cs
+FN:11,System.Void MvcMusicStore.Controllers.StoreController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:10,System.Void MvcMusicStore.Controllers.StoreController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:12,10
+DA:13,10
+DA:14,10
+DA:15,10
+FN:25,System.Void MvcMusicStore.Controllers.StoreController/<Browse>d__3::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.StoreController/<Browse>d__3::MoveNext()
+DA:26,3
+DA:28,3
+DA:29,3
+DA:30,3
+DA:32,2
+DA:33,2
+FN:35,System.Void MvcMusicStore.Controllers.StoreController/<Details>d__4::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.StoreController/<Details>d__4::MoveNext()
+DA:36,3
+DA:37,3
+DA:38,3
+DA:39,3
+DA:40,3
+DA:42,3
+DA:43,1
+DA:45,2
+DA:46,3
+BRDA:42,427,0,1
+BRDA:42,427,1,2
+FN:18,System.Void MvcMusicStore.Controllers.StoreController/<Index>d__2::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.StoreController/<Index>d__2::MoveNext()
+DA:19,3
+DA:20,3
+DA:21,3
+DA:22,3
+LF:23
+LH:23
+BRF:2
+BRH:2
+FNF:4
+FNH:4
+end_of_record
+SF:/modernize-data/studio-data/TNT1001/APP213070/transformed-code/117/studio-workspace/MVC4/MvcMusicStore/Controllers/StoreManagerController.cs
+FN:13,System.Void MvcMusicStore.Controllers.StoreManagerController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+FNDA:20,System.Void MvcMusicStore.Controllers.StoreManagerController::.ctor(MvcMusicStore.Data.ApplicationDbContext)
+DA:14,20
+DA:15,20
+DA:16,20
+DA:17,20
+FN:45,System.Void MvcMusicStore.Controllers.StoreManagerController/<Create>d__4::MoveNext()
+FNDA:1,System.Void MvcMusicStore.Controllers.StoreManagerController/<Create>d__4::MoveNext()
+DA:46,1
+DA:47,1
+DA:48,1
+DA:49,1
+DA:50,1
+DA:51,1
+DA:52,1
+BRDA:47,34,1,1
+BRDA:47,34,0,1
+BRDA:49,343,1,1
+BRDA:49,343,0,1
+FN:57,System.Void MvcMusicStore.Controllers.StoreManagerController/<Create>d__5::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.StoreManagerController/<Create>d__5::MoveNext()
+DA:58,3
+DA:59,3
+DA:60,2
+DA:61,2
+DA:62,2
+DA:63,2
+DA:66,1
+DA:67,1
+DA:68,1
+DA:69,1
+DA:70,1
+DA:71,3
+BRDA:59,61,0,2
+BRDA:59,61,1,1
+BRDA:66,239,1,1
+BRDA:66,239,0,1
+BRDA:68,568,1,1
+BRDA:68,568,0,1
+FN:108,System.Void MvcMusicStore.Controllers.StoreManagerController/<Delete>d__8::MoveNext()
+FNDA:2,System.Void MvcMusicStore.Controllers.StoreManagerController/<Delete>d__8::MoveNext()
+DA:109,2
+DA:110,2
+DA:111,2
+DA:112,1
+DA:114,1
+DA:115,2
+BRDA:111,187,0,1
+BRDA:111,187,1,1
+FN:120,System.Void MvcMusicStore.Controllers.StoreManagerController/<DeleteConfirmed>d__9::MoveNext()
+FNDA:3,System.Void MvcMusicStore.Controllers.StoreManagerController/<DeleteConfirmed>d__9::MoveNext()
+DA:121,3
+DA:122,3
+DA:123,3
+DA:124,2
+DA:125,2
+DA:126,2
+DA:127,2
+DA:128,3
+DA:129,3
+BRDA:123,198,0,2
+BRDA:123,198,1,3
+FN:31,System.Void MvcMusicStore.Controllers.StoreManagerController/<Details>d__3::MoveNext()
+FNDA:4,System.Void MvcMusicStore.Controllers.StoreManagerController/<Details>d__3::MoveNext()
+DA:32,4
+DA:33,4
+DA:34,4
+DA:35,4
+DA:36,4
+DA:38,4
+DA:39,2
+DA:41,2
+DA:42,4
+BRDA:38,427,0,2
+BRDA:38,427,1,2
+FN:74,System.Void MvcMusicStore.Controllers.StoreManagerController/<Edit>d__6::MoveNext()
+FNDA:2,System.Void MvcMusicStore.Controllers.StoreManagerController/<Edit>d__6::MoveNext()
+DA:75,2
+DA:76,2
+DA:77,2
+DA:78,1
+DA:80,1
+DA:81,1
+DA:82,1
+DA:83,1
+DA:84,1
+DA:85,2
+BRDA:77,212,0,1
+BRDA:77,212,1,1
+BRDA:80,236,1,1
+BRDA:80,236,0,1
+BRDA:82,565,1,1
+BRDA:82,565,0,1
+FN:90,System.Void MvcMusicStore.Controllers.StoreManagerController/<Edit>d__7::MoveNext()
+FNDA:2,System.Void MvcMusicStore.Controllers.StoreManagerController/<Edit>d__7::MoveNext()
+DA:91,2
+DA:92,2
+DA:93,1
+DA:95,1
+DA:96,1
+DA:97,1
+DA:100,1
+DA:101,1
+DA:102,1
+DA:103,1
+DA:104,1
+DA:105,2
+BRDA:92,61,0,1
+BRDA:92,61,1,1
+BRDA:100,234,1,1
+BRDA:100,234,0,1
+BRDA:102,563,1,1
+BRDA:102,563,0,1
+FN:20,System.Void MvcMusicStore.Controllers.StoreManagerController/<Index>d__2::MoveNext()
+FNDA:2,System.Void MvcMusicStore.Controllers.StoreManagerController/<Index>d__2::MoveNext()
+DA:21,2
+DA:22,2
+DA:23,2
+DA:24,2
+DA:25,2
+DA:26,2
+DA:27,2
+DA:28,2
+LF:77
+LH:77
+BRF:28
+BRH:28
+FNF:9
+FNH:9
+end_of_record
+SF:/app/.nuget/packages/microsoft.net.test.sdk/17.9.0/build/netcoreapp3.1/Microsoft.NET.Test.Sdk.Program.cs
+FN:3,System.Void AutoGeneratedProgram::Main(System.String[])
+FNDA:0,System.Void AutoGeneratedProgram::Main(System.String[])
+DA:4,0
+LF:1
+LH:0
+BRF:0
+BRH:0
+FNF:1
+FNH:0
+end_of_record

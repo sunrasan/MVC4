@@ -20,7 +20,8 @@
           "net10.0"
         ],
         "sources": {
-          "/app/.nuget/packages/": {}
+          "/tmp/local-nuget-feed": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net10.0": {
