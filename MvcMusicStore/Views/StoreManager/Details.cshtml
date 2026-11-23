@@ -1,4 +1,4 @@
-﻿@model MvcMusicStore.Models.Album
+@model MvcMusicStore.Models.Album
 
 @{
     ViewBag.Title = "Details";
@@ -10,17 +10,17 @@
     <legend>Album</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Genre.Name)
+         @Html.DisplayNameFor(model => model.Genre!.Name)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Genre.Name)
+        @Html.DisplayFor(model => model.Genre!.Name)
     </div>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Artist.Name)
+         @Html.DisplayNameFor(model => model.Artist!.Name)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Artist.Name)
+        @Html.DisplayFor(model => model.Artist!.Name)
     </div>
 
     <div class="display-label">
